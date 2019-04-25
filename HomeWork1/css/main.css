@@ -1,3 +1,4 @@
+
 /* ------Specification ------ */
 body {
 	font: 400 14px 'Montserrat', sans-serif;
@@ -579,6 +580,10 @@ figure {
    		 max-width: 1200px;
 	}
 
+	#menu-checkbox {
+		display: none;
+	}
+
 }
 
 
@@ -594,6 +599,9 @@ figure {
 
 	.nav__logo {
 		font-size: 23px;
+	}
+	#menu-checkbox {
+		display: none;
 	}
 
 }
@@ -700,9 +708,9 @@ figure {
 	.favorites__title:after {
 		display: none;
 	}
-	
+
 	#menu-checkbox {
-		display:none;
+		display: none;
 	}
 
 }
@@ -715,9 +723,12 @@ figure {
 	 .enjoy__text {
 		 max-width: 90%;
 	}
-	
-	
-	
+
+	.nav__menu {
+		display: none;
+	}
+
+
 
 
 
