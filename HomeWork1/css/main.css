@@ -1,0 +1,727 @@
+/* ------Specification ------ */
+body {
+	font: 400 14px 'Montserrat', sans-serif;
+	color: #2c3551;
+	padding: 0;
+	margin: 0;
+}
+
+.container {
+	width: 1170px;
+	margin: 0 auto;
+}
+
+div, p, form, input, a, span, button {
+	box-sizing: border-box;
+}
+
+p {
+	margin: 0;
+	line-height: 1.5em;
+}
+
+ul, li {
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	padding: 0;
+	margin: 0;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+h1 {
+	font-size: 95px;
+}
+
+h2 {
+	font-size: 65px;
+}
+
+h3 {
+	font-size: 42px;
+}
+
+h4 {
+	font-size: 24px;
+}
+
+a, a:hover, a:active {
+	text-decoration: none;
+}
+
+a, button, input {
+	transition: all 0.5s ease;
+}
+
+input, input:hover, input:focus, input:active,
+button, button:hover, button:focus, button:active {
+	outline: none;
+}
+
+.container-fluid_plain {
+	padding: 0;
+}
+
+.btn {
+	text-transform: uppercase;
+	color: #fff;
+	text-align: center;
+	background: #8b755a;
+	display: block;
+	font-size: 12px;
+	width: 160px;
+	padding: 15px 0;
+	margin: 0 auto;
+	font-weight: bold;
+	border: 2px solid #8b755a;
+}
+
+.btn:hover {
+	background:transparent;
+	color: #8b755a;
+	border: 2px solid #8b755a;
+}
+
+.btn:focus {
+	box-shadow: none;
+}
+
+.white-btn {
+	display: block;
+	font-size: 12px;
+	text-transform: uppercase;
+	color:#fff;
+	padding: 18px 0;
+	border: 2px solid #fff;
+	margin: 0 auto;
+	font-weight: bold;
+}
+
+.white-btn:hover {
+	border-color: #8b755a;
+	background-color: #8b755a;
+}
+
+/* ------ First Screen ------ */
+
+.header {
+	background: url(../img/fon.jpg) no-repeat center top / cover;
+	padding: 50px 0 40px;
+}
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav__logo {
+	font-family: 'Chau Philomene One', sans-serif;
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 26px;
+	display: block;
+}
+
+.nav__wrap {
+	display: flex;
+	align-items: center;
+}
+
+.nav__menu {
+	display: flex;
+}
+
+.nav__link:hover {
+	color: #8b755a;
+	border: 2px solid #8b755a;
+	color: #8b755a;
+}
+
+.nav__button {
+	margin-left: 32px;
+}
+
+.nav__link {
+	display: block;
+	color: #fff;
+	font-size: 11px;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-right: 8px;
+	padding: 5px;
+	border: 2px solid transparent;
+}
+
+.offer {
+	text-align: center;
+	margin: 270px 0 240px;
+	color: #fff;
+}
+
+.offer__text {
+	font-family: 'Great Vibes', cursive;
+	font-size: 37px;
+}
+
+.offer__title {
+	font-weight: normal;
+	margin-bottom: 30px;
+}
+
+.offer__button {
+	width: 160px;
+}
+
+.arrow-down {
+	font-family: 'Great Vibes', cursive;
+    font-size: 30px;
+    display: block;
+    color: #fff;
+    margin: 0 auto;
+	text-align: center;
+	width: 50px;
+	height: 50px;
+	background-color: transparent;
+	line-height: 45px;
+	border: 2px solid transparent;
+	border-radius: 50%;
+
+}
+
+.arrow-down:hover {
+	background-color: #8b755a
+}
+
+/* ------ Second Screen "coffehouse"------ */
+.coffeehouse {
+	padding: 150px 0 150px;
+	background-color: #f5f5f5; 
+}
+
+.prof {
+	padding-bottom: 120px;
+}
+
+.prof__logo {
+	font-family: 'Chau Philomene One', sans-serif;
+	text-transform: uppercase;
+}
+
+.prof__text {
+	max-width: 600px;
+	text-align: center;
+	margin: 0 auto;
+	color: #232323;
+	position: relative;
+	font-size: 20px;
+	line-height: 1.8em;
+}
+
+.prof__text:before {
+	position: absolute;
+	content: '';
+	left: -80px;
+    top: 72px;
+    width: 50px;
+    height: 1px;
+    background-color: #505050;
+
+}
+
+.prof__text:after {
+	position: absolute;
+	content: '';
+	right: -80px;
+    top: 72px;
+    width: 50px;
+    height: 1px;
+    background-color: #505050;
+
+}
+
+.together {
+	position: relative;
+	height: 654px;
+}
+
+.together__picture {
+	background-image: url(../img/7.jpg);
+	background-size: cover;
+	height: 100%;
+	width: 54%;
+	position: absolute;
+	right: 0px;
+	
+}
+
+.together__inner {
+	position: relative;
+	max-width: 585px;
+	float: right;
+	width: 100%;
+	padding: 70px 70px 50px;
+	margin: 95px 0 95px;
+	background-color: #ffffff;
+}
+
+.together__block {
+	float: left;
+	width: 50%;
+	z-index: 1;
+	position: relative;
+}
+
+.together__title {
+	margin-bottom: 40px;
+}
+
+.together__text {
+	font-size: 15px;
+	max-width: 410px;
+	color: #959494;
+	line-height: 1.8em;
+}
+
+.together__signature {
+	font-family: 'Mr De Haviland', cursive;
+	font-size: 48px;
+	color: #232323;
+	margin-top: 40px;
+}
+
+.lunch {
+	position: relative;
+	height: 654px;
+	margin: 120px 0 0;
+}
+
+.lunch__picture {
+	background-image: url(../img/10.jpg);
+	background-size: cover;
+	height: 100%;
+	width: 54%;
+	position: absolute;
+}
+
+.lunch__inner {
+	position: relative;
+	max-width: 585px;
+	float: left;
+	width: 100%;
+	padding: 70px 70px 50px;
+	margin-top: 95px;
+	margin-bottom: 95px;
+	background-color: #ffffff;
+}
+
+.lunch__block {
+	float: right;
+	width: 50%;
+	z-index: 1;
+	position: relative;
+}
+
+.lunch__title {
+	margin-bottom: 40px;
+}
+
+.lunch__text {
+	font-size: 15px;
+	max-width: 390px;
+	color: #959494;
+	line-height: 1.8em;
+}
+
+.lunch__link {
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: bold;
+	margin: 62px 0 35px;
+	display: inline-block;
+	color: #a69785;
+	border-bottom: 1px solid #a69785;
+}
+
+.lunch__link:hover {
+	border-color: transparent;
+	color: #5e5d5d
+}
+
+/* ------ Third Screen "favorites"------ */
+
+.favorites {
+	padding: 90px 0 140px;
+}
+
+.favorites__text {
+	color: #8b755a;
+	font-size: 30px;
+	font-family: 'Great Vibes', cursive;
+	
+}
+
+.favorites__title {
+	text-align: center;
+	position: relative;
+}
+
+.favorites__title:after {
+	content: '';
+	position: absolute;
+	width: 38px;
+	height: 1px;
+	background-color: #8b755a;
+	top: 150px;
+    right: 562px;
+}
+
+.favorites__name {
+	margin: 20px 0 80px;
+}
+	
+.favorites__menu {
+	margin: 0 auto 25px;
+	position: relative;
+	color: #fff;
+	text-align: center;
+	max-width: 372px;
+	cursor: pointer;
+}
+
+.favorites__img {
+	max-width: 100%;
+	display: block;
+}
+
+.favorites__overlay {
+	background: rgba(0,0,0,0.55);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: all .5s ease;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.favorites__menu:hover .favorites__overlay {
+	opacity:1;
+}
+
+.favorites__img-title {
+	font-weight: 700;
+	font-size: 14px;
+	margin-bottom: 15px;
+}
+.favorites__img-title:after {
+	content: '';
+	width: 40px;
+    height: 1px;
+	background-color: #fff;
+	position: absolute;
+	right: 165px;
+    top: 232px;
+}
+
+.favorites__link {
+	font-size: 12px;
+	font-style: italic;
+	color: #fff;
+}
+
+.favorites__wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+/* ------ Forth Screen "enjoy"------ */
+
+.enjoy {
+	background: url(../img/23.jpg) no-repeat center center / cover;
+	padding: 215px 0 200px; 
+	color: #fff;
+	text-align: center;
+}
+
+.enjoy__text {
+	width: 615px;
+	margin: 40px auto 35px;
+	font-size: 20px;
+
+}
+
+.enjoy__btn {
+	width: 205px;
+}
+
+/* ------ Footer------ */
+
+.footer {
+	padding: 80px 0 30px;
+	background-color: #171717;
+}
+
+.widgets {
+	display: flex;
+	justify-content: space-between;
+	color: #fff;
+	align-items: top;
+	margin-bottom: 50px;
+}
+
+.data {
+	color: #bcbcbc;
+	margin-bottom: 10px;
+	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+	letter-spacing: 0.05em;
+}
+
+.data__item {
+	margin-top: 15px;
+}
+.data__item a {
+	color: #bcbcbc;
+}
+
+.instagram__title, .form__title {
+	text-transform: uppercase;
+	font-size: 11px;
+	font-weight: bold;
+	margin-bottom: 25px;
+}
+
+form {
+	display: flex;
+}
+
+input {
+	width: 100%;
+	max-width: 440px;
+	background-color: #fff;
+	padding: 15px 0;
+	margin-right: 15px;
+}
+
+.form__btn {
+	cursor: pointer;
+}
+
+.socials {
+	display: flex;
+	margin-top: 37px;
+}
+
+.socials__item {
+	margin-right: 9px;
+	
+	
+}
+
+.socials__link {
+	color: #8b755a;
+	line-height: 40px;
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	font-size: 17px;
+	border: 2px solid #8b755a;
+	border-radius: 50%;
+
+}
+
+.socials__link:hover {
+	background-color: #8b755a;
+	color: #fff;
+	transform: translate(0, 0);
+	border-radius: 50%;
+}
+
+.copyright {
+	padding-top: 33px;
+	border-top: 1px solid #545454;
+	color: #545454;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+}
+
+.instagram__photos {
+	display: flex;
+	flex-wrap: wrap;
+	height: 170px;
+	width: 256px;
+	justify-content: space-between;
+}
+
+
+
+figure {
+	margin: 0;
+}
+
+
+/* ------ Media Queries ------ */
+
+/*>1200px */
+@media (min-width: 1200px) {
+
+	.container {
+   		 max-width: 1200px;
+	}
+
+}
+
+
+/* 992-1200px */
+@media screen and (max-width: 1200px) {
+	.container {
+		width: 960px;
+	}
+
+	.favorites__menu {
+		width: 30%;
+	}
+
+	.nav__logo {
+		font-size: 23px;
+	}
+
+}
+
+/* 768-992px */
+@media screen and (max-width: 992px) {
+
+	.container {
+		max-width: 700px;
+	}
+
+	.nav__logo {
+		font-size: 20px;
+	}
+
+	.nav__button {
+		display: none;
+	}
+
+	h1 {
+		font-size: 75px;
+	}
+
+	.header {
+		padding: 45px 0 30px;
+	}
+	
+
+	.offer {
+		margin: 200px 0 150px;
+	}
+
+	.prof__text {
+		max-width: 90%;
+	}
+
+	.prof__text:before, .prof__text:after {
+		display: none;
+	}
+
+	.together__block, .lunch__block {
+		width: 100%;
+	}
+
+	.together__inner {
+		margin: 76px 0 95px;
+	}
+
+	.together__inner, .lunch__inner, .together__text, .lunch__text {
+		max-width: 100%;
+	}
+
+	.together__text {
+		max-width: 100%;
+	}
+
+	.together__picture {
+		background: url(../img/71.jpg) no-repeat left center / cover;
+		height: 73%;
+		width: 100%;
+		right: 0px;
+		top: 530px;
+	}
+
+	.lunch__picture {
+		background-image: url(../img/101.jpg);
+		height: 73%;
+		width: 100%;
+		position: absolute;
+		right: 0px;
+		top: 530px;
+	}
+
+	.lunch {
+		margin: 285px 0 0;
+	}
+
+	.coffeehouse {
+		padding: 120px 0;
+	}
+
+	.prof {
+		padding-bottom: 20px;
+	}
+
+	.favorites {
+		padding: 369px 0 140px;
+	}
+
+	h2 {
+		font-size: 50px;
+	}
+
+	.enjoy {
+	
+		padding: 180px 0 130px;
+		
+	}
+
+	.instagram  {
+		display: none;
+	}
+
+	.favorites__title:after {
+		display: none;
+	}
+
+}
+
+/* 576-768px */
+@media screen and (max-width: 768px) {
+	.container {
+		max-width: 550px;
+	}
+	 .enjoy__text {
+		 max-width: 90%;
+	}
+
+	
+
+
+
+}
+
+/* 320-576px */
+@media screen and (max-width: 576px) {
+	.container {
+		max-width: 320px;
+	}
+	
+}
