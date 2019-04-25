@@ -700,6 +700,10 @@ figure {
 	.favorites__title:after {
 		display: none;
 	}
+	
+	#menu-checkbox {
+		display:none;
+	}
 
 }
 
@@ -711,7 +715,8 @@ figure {
 	 .enjoy__text {
 		 max-width: 90%;
 	}
-
+	
+	
 	
 
 
