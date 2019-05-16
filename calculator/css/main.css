@@ -1,0 +1,131 @@
+body {
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 375px;
+    height: 475px;
+    margin: -238px 0 0 -188px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: #c3c2c3;
+}
+
+button {
+    display: block;
+    position: absolute;
+    height: 60px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 2px solid rgb(3, 3, 3);
+    width: 60px;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+button#id0 {
+    margin: 362px 0 0 114px;
+}
+
+button#idC {
+    margin: 362px 0 0 45px;
+}
+
+button#idEq {
+    margin: 362px 0 0 184px;
+}
+
+button#idDivide {
+    margin: 362px 0 0 267px;
+}
+
+
+
+button#id1 {
+    margin: 283px 0 0 45px;
+}
+
+button#id2 {
+    margin: 283px 0 0 114px;
+}
+
+button#id3 {
+    margin: 283px 0 0 184px;
+}
+
+button#idPlus {
+    margin: 283px 0 0 267px;
+}
+
+button#id4 {
+    margin: 205px 0 0 45px;
+}
+
+button#id5 {
+    margin: 205px 0 0 114px;
+}
+
+button#id6 {
+    margin: 205px 0 0 184px;
+}
+
+button#idMinus {
+    margin: 205px 0 0 267px;
+}
+
+button#id7 {
+    margin: 127px 0 0 45px;
+}
+
+button#id8 {
+    margin: 127px 0 0 114px;
+}
+
+button#id9 {
+    margin: 127px 0 0 184px;
+}
+
+button#idMulty {
+    margin: 127px 0 0 267px;
+}
+
+.numbers:hover {
+    border: 2px solid black;
+    background-color: #3f3f3f;
+}
+
+.spec {
+    background-color: #e0e2e2;
+    color: black;
+    font-weight: bolder;
+}
+
+.result {
+    /* margin: 52px 0 0 302px;
+    font-family: monospace;
+    font-size: 42px;
+    position: absolute; */
+    border: 2px solid black;
+    padding: 15px;
+    text-align: right;
+    background-color: aliceblue;
+    width: 264px;
+    margin: 34px auto;
+}
+
+.cell {
+    margin: -104px 0 0 50px;
+    position: absolute;
+    font-size: 20px;
+}
+
+#znak {
+    margin: -105px 0 0 106px;
+    position: absolute;
+    font-size: 20px;
+}
