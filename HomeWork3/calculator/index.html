@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calc</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/normalize.css">
+</head>
+<body>
+    <div class="container">
+        <button class="spec" id="idC" onclick="clearDisplay()">C</button>
+        <button class="numbers" id="id0" onclick="fun0()">0</button>
+        <button class="spec" id="idEq" onclick="funEqually()">=</button>
+        <button class="spec" id="idDivide" onclick="funDivide()">%</button>
+
+        <button class="numbers" id="id1" onclick="fun1()">1</button>
+        <button class="numbers" id="id2" onclick="fun2()">2</button>
+        <button class="numbers" id="id3" onclick="fun3()">3</button>
+        <button class="spec" id="idPlus" onclick="funPlus()">+</button>
+
+
+        <button class="numbers" id="id4" onclick="fun4()">4</button>
+        <button class="numbers" id="id5" onclick="fun5()">5</button>
+        <button class="numbers" id="id6" onclick="fun6()">6</button>
+        <button class="spec" id="idMinus" onclick="funMinus()">-</button>
+
+        <button class="numbers" id="id7" onclick="fun7()">7</button>
+        <button class="numbers" id="id8" onclick="fun8()">8</button>
+        <button class="numbers" id="id9" onclick="fun9()">9</button>
+        <button class="spec" id="idMulty" onclick="funMulty()">*</button>
+
+        <div id=result class="result">0</div>
+        <div id = "cell" class="cell"></div>
+        <div id="znak"></div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
