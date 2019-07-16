@@ -1,0 +1,126 @@
+div, p, form, input, a, span, button {
+	box-sizing: border-box;
+	margin: 0;
+ }
+
+ li {
+ 	list-style-type: none;
+ }
+
+ h2 {
+ 	font-weight: 900;
+ 	text-transform: uppercase;
+ 	font-size: 24px;
+ 	text-align: center;
+ 	margin-bottom: 80px;
+ }
+
+ body {
+ 	font-family: Tahoma, sans-serif;
+ 	width: 935px;
+	margin: 0 auto;
+ }
+
+.main-offer {
+	text-align: center;
+	margin-bottom: 80px;
+	line-height: 1.3;
+}
+
+.header	{
+	padding: 110px 0 145px;
+}
+
+.header strong{
+	text-transform: uppercase;
+	font-size: 24px;
+}
+
+ h1 span {
+ 	display: block;
+ 	font-weight: normal;
+ 	font-size: 24px;
+}
+
+.video, .form {
+	display: inline-block;
+	vertical-align: top;
+
+}
+
+.form {
+	padding: 28px 25px;
+	border: 5px solid #2727d9;
+	margin-left: 20px;
+}
+
+.form-cap {
+	font-weight: 900;
+	font-size: 20px;
+	margin-bottom: 28px;
+}
+
+input {
+	display: block;
+	margin-bottom: 10px;
+	padding: 16px;
+	width: 300px;
+}
+
+.btn {
+	font-size: 18px;
+	background-color: #3c3cdd;
+	color: #fff;
+	padding: 20px 55px;
+	border: none;
+}
+
+.reasons {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+}
+
+.advantage {
+	text-align: center;
+	margin-bottom: 92px;
+	width: 130px;
+}
+
+.advantage img {
+	   margin-bottom: 7px;
+}
+
+li p {
+	font-weight: 900;
+}
+
+.form-btn {
+	display: block;
+	margin: 0 auto;
+}
+
+.have-to-do {
+	margin-bottom: 100px;
+}
+
+.clients {
+	padding-bottom: 32px;
+}
+
+.gallery {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.clients img {
+	margin-bottom: 35px;
+}

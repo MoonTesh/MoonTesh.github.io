@@ -1,0 +1,29 @@
+div, p, form, input, a, span, button {
+	box-sizing: border-box;
+	margin: 0;
+ }
+
+ li {
+ 	list-style-type: none;
+ }
+
+h1 {
+	margin: 110px auto;
+	text-transform: uppercase;
+
+}
+
+ body {
+ 	font-family: Arial, sans-serif;
+
+	margin: 0 auto;
+ }
+
+ p {
+	font-size: 18px;
+ }
+
+img {
+	max-width: 100%;
+}
+

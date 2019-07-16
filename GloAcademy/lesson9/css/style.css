@@ -1,0 +1,122 @@
+div, p, form, input, a, span, button {
+	box-sizing: border-box;
+	margin: 0;
+ }
+
+ li {
+ 	list-style-type: none;
+ }
+
+ h2 {
+ 	font-weight: 900;
+ 	text-transform: uppercase;
+ 	font-size: 24px;
+ 	text-align: center;
+ 	margin-bottom: 80px;
+ }
+
+ body {
+ 	font-family: Tahoma, sans-serif;
+ 	
+	margin: 0 auto;
+ }
+
+.main-offer {
+	margin-bottom: 78px;
+	line-height: 1.1;
+}
+
+.header	{
+	padding: 110px 0 145px;
+}
+
+.header strong{
+	text-transform: uppercase;
+	font-size: 24px;
+}
+
+ h1 span {
+ 	display: block;
+ 	font-weight: normal;
+ 	font-size: 24px;
+}
+
+.form {
+	display: inline-block;
+	vertical-align: top;
+
+}
+
+.form {
+	padding: 28px 25px 28px 16px;
+	border: 5px solid #2727d9;
+	margin-left: 0px;
+}
+
+.form-cap {
+	font-weight: 900;
+	font-size: 20px;
+	margin-bottom: 29px;
+}
+
+input {
+	display: block;
+	margin-bottom: 10px;
+	padding: 11px;
+	width: 250px;
+}
+
+.btn {
+	font-size: 18px;
+	background-color: #3c3cdd;
+	color: #fff;
+	padding: 17px 33px;
+	border: none;
+}
+
+
+.form-btn {
+	display: block;
+	margin: 0 auto;
+}
+
+.have-to-do {
+	margin-bottom: 100px;
+}
+
+.feature-box p {
+	font-weight: 900;
+	font-size: 16px;
+	max-width: 150px;
+	margin: 10px auto 80px;
+}
+
+.clients {
+	padding-bottom: 32px;
+}
+
+.gallery {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.clients img {
+	margin-bottom: 35px;
+}
+
+.instruction-btn {
+	width: 300px;
+}
+
+
+
+@media (min-width: 1200px){
+	.container {
+	    max-width: 960px;
+	}
+}

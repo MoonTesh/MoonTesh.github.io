@@ -1,0 +1,113 @@
+h1, h2, h3 {
+  text-align: center;
+}
+
+h1 {
+  font-family: cursive;
+    margin-top: 1em;
+    margin-bottom: .5em;
+    font-size: 400%;
+    font-weight: bold;
+    line-height: 1;
+}
+  h1 {
+  position: relative;
+  color: black;
+  -webkit-text-stroke: .04em black;
+}
+h1:before { /* второй слой */
+  content: attr(data-text);
+  position: absolute; /* в том же месте той же ширины */
+  left: 0;
+  right: 0;
+  -webkit-text-stroke: .02em gold;
+}
+
+
+h2 {
+  padding-bottom: 38px;
+  font-size: 38px;
+}
+
+h3 {
+  padding: 40px 0 20px;
+  font-size: 26px;
+}
+
+p {
+  text-indent: 2%;
+  font-size: 18px;
+}
+
+.introduction {
+  padding: 70px 0;
+  border-bottom: 1px solid rgba(0,0,0,0.3) ;
+}
+
+.content, #first, #second, #third, #fourth{
+  padding: 70px 0;
+  border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  font-size: 25px;
+  list-style-type:none;
+  text-align: center;
+/*   margin:0 auto; */
+}
+
+li a {
+  display: inline-block;
+  color: #39383b;
+  text-decoration: none;
+  padding: 10px;
+  margin: 15px;
+  border: 2px solid;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+li a:hover {
+   box-shadow:
+   0 0 0 3px #60B88D,
+   0 0 0 6px #90CDAF,
+   0 0 0 9px #BFE3D1;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.mark {
+  background-color: yellow;
+}
+
+.throu {
+  text-decoration: line-through;
+}
+
+.em {
+  font-style: italic;
+}
+
+button {
+  display:block;
+  margin: 30px auto 0;
+  padding: 10px;
+  border-radius: 5px; 
+   
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+figcaption {
+  text-align: center;
+}
