@@ -18,3 +18,4 @@
 
 [Урок 12 - Репозиторий GitHub](https://moontesh.github.io/GloAcademy/lesson12/ "Репозиторий GitHub")
 
+[Урок 13 - Верстка pixel perfect](https://moontesh.github.io/GloAcademy/lesson13/ "Репозиторий GitHub")
