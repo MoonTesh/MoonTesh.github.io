@@ -21,3 +21,6 @@
 [Урок 13 - Верстка pixel perfect](https://moontesh.github.io/GloAcademy/lesson13/ "Репозиторий GitHub")
 
 [Урок 14 - Подключение шрифтов](https://moontesh.github.io/GloAcademy/lesson14/ "Репозиторий GitHub")
+
+[Урок 15 - Псевдоклассы и псевдоэлементы](https://moontesh.github.io/GloAcademy/lesson15/ "Репозиторий GitHub")
+
