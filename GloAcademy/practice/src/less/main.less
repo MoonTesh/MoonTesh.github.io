@@ -48,6 +48,10 @@
 html {
 	font-size: 10px;
 }
+body {
+	.reg;
+	color: @text;
+}
 section {
 	padding: 10rem 0;
 }
@@ -62,16 +66,23 @@ button {
 	letter-spacing: 0.03rem;
 	font-size: 1.2rem;
 	.bold;
-
+	&:hover {
+		background: darken(@btn-color, 5%);
+	}
+}
+button,input,a {
+	&:focus {
+		outline: none;
+	}
+}
+a:hover{
+	text-decoration: none;
 }
 
 
 
 /* ------ Typography ------ */
-body {
-	.reg;
-	color: @text;
-}
+
 
 
 /* ------ First screen ------ */
@@ -151,11 +162,12 @@ body {
 	}
 	&__input {
 		display: block;
-		padding: 1.9rem 0;
+		padding: 1.7rem 2rem;
 		width: 100%;
 		border:1px solid #dddddd;
 		border-radius: 5px;
 		margin: 2.3rem 0;
+		font-size: 1.3rem;
 	}
 	&__btn {
 		display: block;
@@ -175,3 +187,134 @@ body {
 	}
 }
 
+
+
+/*>1200px */
+@media (min-width: 1200px) {
+
+	.container {
+   		 max-width: 1140px;
+	}
+	
+}
+
+/* 992-1200px */
+@media screen and (max-width: 1200px) {
+
+
+}
+
+/* 769-992px */
+@media screen and (max-width: 992px) {
+	.main {
+		background-position: top left;
+		
+	}
+	.offer {
+		text-align: center;
+		&-form {
+	    	margin-top: 17rem;
+		}
+		&__title {
+			font-size: 3rem;
+			width: 375px;
+			line-height: 4rem;
+			position: absolute;
+			top: -10rem;
+			right: 15rem;
+		}
+		&__text {
+		    margin: 8rem 0 6rem;
+		}
+		&__trigger {
+			margin-top: 6rem;
+		}
+
+	}
+	.main-form {
+		padding: 3rem 3rem 3rem;
+		margin-top: 3rem;
+	}
+
+}
+/* 576-768px */
+@media screen and (max-width: 768px) {
+	.header-btn {
+		margin-top: 17rem;
+	}
+	.offer__title {
+		text-align: center;
+		left: 50%;
+		transform: translateX(-50%) translateY(-50%);
+		top: -13rem;
+	}
+	.offer-form {
+	    margin-top: 1rem;
+	}
+	.offer__text {
+		margin: 2rem auto;
+	}
+	.offer__coast {
+		display: block;
+		margin: 0 auto;
+	}
+	.main-form {
+		padding: 1.6rem 4.7rem;
+		&__title {
+			margin: 0 auto 3.9rem;
+		}
+		&__info {
+			left: 50%;
+			transform: translateX(-50%) translateY(-13%);
+		}
+	}
+
+}
+/* 320-576px */
+@media screen and (max-width: 576px) {
+
+	
+	.main {
+		background: #fff url(../img/1.jpg) left center no-repeat;
+		background-size: cover;
+		padding: 0 0 8.6rem;
+		.tel {
+		    font-size: 1.4rem;
+		}
+		button {
+			display: block;
+			padding: 1.4rem 2rem;
+		}
+		.logo-small {
+			margin-top: 3rem;
+		}
+		.offer {
+			&-form {
+				margin-top: 13rem;
+			}
+			&__title {
+			    font-size: 2.2rem;
+			    width: 275px;
+			    line-height: 3rem;
+			    top: -4rem;
+			}
+			&__text {
+				margin: 2rem auto;
+				text-align: center;
+				font-size: 1.8rem;
+			}
+
+		}
+		.main-form {
+		    padding: 1.6rem 1.6rem;
+		    &__title {
+		    	width: 26.2rem;
+		    }
+		}
+		.tel {
+			background-color: @btn-text-color;
+			padding: 1.2rem 0;
+		}
+	}
+
+}
