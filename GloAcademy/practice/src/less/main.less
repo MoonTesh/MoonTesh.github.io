@@ -55,7 +55,7 @@ body {
 section {
 	padding: 10rem 0;
 }
-button {
+.button {
 	background-color: @btn-color;
 	color: @btn-text-color;
 	padding: 1.6rem 3rem;
@@ -70,7 +70,7 @@ button {
 		background: darken(@btn-color, 5%);
 	}
 }
-button,input,a {
+.button,input,a {
 	&:focus {
 		outline: none;
 	}
@@ -79,9 +79,11 @@ a:hover{
 	text-decoration: none;
 }
 
+button:focus {
+    outline: none;
+}
 
 
-/* ------ Typography ------ */
 
 
 
@@ -186,8 +188,65 @@ a:hover{
 		font-size: 1.2rem;
 	}
 }
+ 
+ /* ------ Second screen "features-section"------ */
+.features {
+	&__title {
+		margin-bottom: 12rem;
+		.bold;
+		font-size: 3.6rem;
+		text-align: center;
+		}
+	&__block {
+		text-align: center;
+		h3 {
+			.bold;
+			font-size: 2rem;
+			margin: 6rem 0 2.5rem;
+		}
+		p {
+			font-size: 1.5rem;
+			max-width: 26rem;
+			margin: 0 auto;
+			a {
+				color: @icon-color; 
+			}
+		}
+	}
+
+}
+.slick-active {
+	outline: none;
+}
 
 
+.slick-slide img {
+	display: inline-block;
+}
+.prev {
+	background: url(../img/leftArrow.svg) center no-repeat;
+	position: absolute;
+	z-index: 99;
+	width: 2rem;
+	height: 2rem;
+	border: none;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	background-size: 70%;
+}
+.next {
+	background: url(../img/rightArrow.svg) center no-repeat;
+	position: absolute;
+	z-index: 99;
+	width: 2rem;
+	height: 2rem;
+	border: none;
+	top: 50%;
+	right: 0;
+	transform: translateY(-50%);
+	background-size: 70%;
+}
 
 /*>1200px */
 @media (min-width: 1200px) {
@@ -208,8 +267,8 @@ a:hover{
 @media screen and (max-width: 992px) {
 	.main {
 		background-position: top left;
-		
 	}
+
 	.offer {
 		text-align: center;
 		&-form {
@@ -229,14 +288,14 @@ a:hover{
 		&__trigger {
 			margin-top: 6rem;
 		}
-
 	}
+
 	.main-form {
 		padding: 3rem 3rem 3rem;
 		margin-top: 3rem;
 	}
-
 }
+
 /* 576-768px */
 @media screen and (max-width: 767px) {
 	.header-btn {
@@ -267,11 +326,27 @@ a:hover{
 			left: 50%;
 			transform: translateX(-50%) translateY(-13%);
 		}
+
+	}
+	.features {
+		&__title {
+			margin-bottom: 5rem;
+			font-size: 2.4rem;
+		}
+		&__block {
+			h3 {
+				margin: 3.7rem 0 2.9rem;
+			}
+		}
 	}
 
 }
 /* 320-576px */
 @media screen and (max-width: 576px) {
+
+	section {
+		padding: 5rem 0 3.7rem;
+	}
 
 	
 	.main {
@@ -317,4 +392,7 @@ a:hover{
 		}
 	}
 
+	
 }
+
+	

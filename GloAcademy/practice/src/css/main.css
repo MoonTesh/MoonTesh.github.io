@@ -25,7 +25,7 @@ body {
 section {
   padding: 10rem 0;
 }
-button {
+.button {
   background-color: #feb404;
   color: #ffffff;
   padding: 1.6rem 3rem;
@@ -37,10 +37,10 @@ button {
   font-size: 1.2rem;
   font-family: 'ProximaNova_bold', "Arial", sans-serif;
 }
-button:hover {
+.button:hover {
   background: #e8a301;
 }
-button:focus,
+.button:focus,
 input:focus,
 a:focus {
   outline: none;
@@ -48,7 +48,9 @@ a:focus {
 a:hover {
   text-decoration: none;
 }
-/* ------ Typography ------ */
+button:focus {
+  outline: none;
+}
 /* ------ First screen ------ */
 .main {
   background: #ffffff url(../img/1.jpg) center center no-repeat;
@@ -145,6 +147,59 @@ a:hover {
   width: 22rem;
   font-size: 1.2rem;
 }
+/* ------ Second screen "features-section"------ */
+.features__title {
+  margin-bottom: 12rem;
+  font-family: 'ProximaNova_bold', "Arial", sans-serif;
+  font-size: 3.6rem;
+  text-align: center;
+}
+.features__block {
+  text-align: center;
+}
+.features__block h3 {
+  font-family: 'ProximaNova_bold', "Arial", sans-serif;
+  font-size: 2rem;
+  margin: 6rem 0 2.5rem;
+}
+.features__block p {
+  font-size: 1.5rem;
+  max-width: 26rem;
+  margin: 0 auto;
+}
+.features__block p a {
+  color: #70c849;
+}
+.slick-active {
+  outline: none;
+}
+.slick-slide img {
+  display: inline-block;
+}
+.prev {
+  background: url(../img/leftArrow.svg) center no-repeat;
+  position: absolute;
+  z-index: 99;
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background-size: 70%;
+}
+.next {
+  background: url(../img/rightArrow.svg) center no-repeat;
+  position: absolute;
+  z-index: 99;
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  background-size: 70%;
+}
 /*>1200px */
 @media (min-width: 1200px) {
   .container {
@@ -213,9 +268,19 @@ a:hover {
     left: 50%;
     transform: translateX(-50%) translateY(-13%);
   }
+  .features__title {
+    margin-bottom: 5rem;
+    font-size: 2.4rem;
+  }
+  .features__block h3 {
+    margin: 3.7rem 0 2.9rem;
+  }
 }
 /* 320-576px */
 @media screen and (max-width: 576px) {
+  section {
+    padding: 5rem 0 3.7rem;
+  }
   .main {
     background: #ffffff url(../img/1.jpg) left center no-repeat;
     background-size: cover;
