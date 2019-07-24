@@ -1,0 +1,42 @@
+a:hover,
+a:focus,
+a:active {
+	text-decoration: none;
+}
+button:focus,
+input:focus,
+a:focus,
+textarea:focus {
+	outline: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+	color: #fff;
+}
+
+.section {
+	padding-top: 300px;
+}
+
+.btn {
+	cursor: pointer;
+}
+
+.close {
+    
+    font-weight: 900;
+    color: #ff0000;
+    text-shadow: 0 0 0 #fff;
+    opacity: 1;
+}
+
+.modal-content {
+	background-color: #3136fe;
+}
+
