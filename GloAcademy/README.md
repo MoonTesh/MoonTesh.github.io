@@ -25,3 +25,5 @@
 [Урок 15 - Псевдоклассы и псевдоэлементы](https://moontesh.github.io/GloAcademy/lesson15/ "Репозиторий GitHub")
 
 [Урок 16 - Слайдер Bootstrap & fotorama.io](https://moontesh.github.io/GloAcademy/lesson16/ "Репозиторий GitHub")
+
+[Урок 17 - Модальное окно](https://moontesh.github.io/GloAcademy/lesson17/ "Репозиторий GitHub")
