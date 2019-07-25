@@ -42,7 +42,8 @@ section {
 }
 .button:focus,
 input:focus,
-a:focus {
+a:focus,
+textarea:focus {
   outline: none;
 }
 a:hover {
@@ -170,6 +171,7 @@ button:focus {
 .features__block p a {
   color: #70c849;
 }
+/* ------ Slick Slider------ */
 .slick-active {
   outline: none;
 }
@@ -199,6 +201,58 @@ button:focus {
   right: 0;
   transform: translateY(-50%);
   background-size: 70%;
+}
+/* ------ Modal Windows------ */
+.popup {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.popup__dialog {
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 3rem 4.8rem;
+  background-color: #fff;
+}
+.popup__content {
+  text-align: center;
+}
+.popup__close {
+  position: absolute;
+  top: -6%;
+  left: 102%;
+  color: #ffffff;
+  border: none;
+  background-color: transparent;
+  font-size: 5.3rem;
+}
+.popup__header {
+  font-family: 'ProximaNova_bold', "Arial", sans-serif;
+  font-size: 1.8rem;
+  margin: 0;
+}
+.popup__text {
+  font-size: 1.8rem;
+  width: 26rem;
+  line-height: 2rem;
+  margin: 0 auto 4rem;
+}
+.popup__form {
+  position: static;
+  padding: 0rem;
+  display: block;
+}
+.popup__form textarea {
+  padding-bottom: 1.1rem;
 }
 /*>1200px */
 @media (min-width: 1200px) {
