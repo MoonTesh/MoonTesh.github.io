@@ -25,6 +25,12 @@ body {
 section {
   padding: 10rem 0;
 }
+li {
+  list-style-type: none;
+}
+ul {
+  padding: 0;
+}
 .button {
   background-color: #feb404;
   color: #ffffff;
@@ -51,6 +57,14 @@ a:hover {
 }
 button:focus {
   outline: none;
+}
+.section-title {
+  font-family: 'ProximaNova_bold', "Arial", sans-serif;
+  font-size: 3.6rem;
+  text-align: center;
+}
+.section-title_light {
+  color: #ffffff;
 }
 /* ------ First screen ------ */
 .main {
@@ -149,11 +163,8 @@ button:focus {
   font-size: 1.2rem;
 }
 /* ------ Second screen "features-section"------ */
-.features__title {
-  margin-bottom: 12rem;
-  font-family: 'ProximaNova_bold', "Arial", sans-serif;
-  font-size: 3.6rem;
-  text-align: center;
+.features__slider {
+  margin-top: 12rem;
 }
 .features__block {
   text-align: center;
@@ -170,6 +181,63 @@ button:focus {
 }
 .features__block p a {
   color: #70c849;
+}
+/* ------ Therd screen "price-section"------ */
+.price-section {
+  background: #286a0a url(../img/therdScreen/bg.jpg) center;
+  text-align: center;
+}
+.price-head__text {
+  margin: 5.2rem 0 9rem;
+  font-size: 1.7rem;
+  color: #ffffff;
+}
+.price-head__button {
+  display: inline-block;
+}
+.price-block {
+  padding: 1rem 3rem 2rem;
+  background-color: #fff;
+  box-shadow: 7px 12px 21px 0 rgba(0, 0, 0, 0.17);
+  text-align: center;
+  min-height: 66rem;
+}
+.price-block h4 {
+  margin: 3rem 0 0;
+  font-size: 1.9rem;
+  font-family: 'ProximaNova_bold', "Arial", sans-serif;
+  min-height: 5rem;
+}
+.price-block img {
+  width: 100%;
+  max-width: 40rem;
+}
+.price-block__number {
+  display: block;
+  margin: 3rem 0 3.5rem;
+  font-family: 'ProximaNova_bold', "Arial", sans-serif;
+  font-size: 1.9rem;
+}
+.price-block__number strong {
+  font-size: 3rem;
+}
+.price-block__list {
+  min-height: 16rem;
+}
+.price-block__list li {
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+  font-family: 'ProximaNova_bold', "Arial", sans-serif;
+}
+.price-block__list li:before {
+  content: '';
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  background: url(../img/therdScreen/check.svg) no-repeat center;
+  background-size: 100%;
+  vertical-align: middle;
+  margin-right: 1rem;
 }
 /* ------ Slick Slider------ */
 .slick-active {
@@ -261,6 +329,21 @@ button:focus {
   }
 }
 /* 992-1200px */
+@media screen and (max-width: 1200px) {
+  .price-head__text {
+    margin: 3rem 0 4rem;
+  }
+  .price-head__button {
+    margin-bottom: 4rem;
+  }
+  .price-block {
+    margin: 0 0 2rem;
+    padding: 3rem 3rem 3rem;
+  }
+  .price-block__number {
+    margin: 2rem 0 2.5rem;
+  }
+}
 /* 769-992px */
 @media screen and (max-width: 992px) {
   .main {
@@ -289,6 +372,9 @@ button:focus {
   .main-form {
     padding: 3rem 3rem 3rem;
     margin-top: 3rem;
+  }
+  .price-block__list {
+    min-height: 100%;
   }
 }
 /* 576-768px */
@@ -373,5 +459,29 @@ button:focus {
   .main .tel {
     background-color: #ffffff;
     padding: 1.2rem 0;
+  }
+  .price-head__button {
+    display: none;
+  }
+  .price-block__list {
+    display: none;
+  }
+  .price-block {
+    margin-bottom: 3rem;
+    min-height: 440px;
+  }
+  .price-block a {
+    display: block;
+    margin-bottom: 2.5rem;
+    color: #006b00;
+    font-size: 1.8rem;
+  }
+  .price-block a::after {
+    content: '';
+    display: block;
+    background: #d4e0d4;
+    width: 19.3rem;
+    height: 0.2rem;
+    margin: 0 auto;
   }
 }
