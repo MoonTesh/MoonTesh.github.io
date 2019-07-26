@@ -27,3 +27,5 @@
 [Урок 16 - Слайдер Bootstrap & fotorama.io](https://moontesh.github.io/GloAcademy/lesson16/ "Репозиторий GitHub")
 
 [Урок 17 - Модальное окно](https://moontesh.github.io/GloAcademy/lesson17/ "Репозиторий GitHub")
+
+[Урок 18 - Аккордион(коллапс)+Таб](https://moontesh.github.io/GloAcademy/lesson18/ "Репозиторий GitHub")
