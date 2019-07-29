@@ -245,7 +245,7 @@ button:focus {
   background-size: cover;
 }
 .feedback h3 {
-  margin: 9.8rem;
+  margin-bottom: 9.8rem;
 }
 .feedback-slider {
   background-color: #ffffff;
