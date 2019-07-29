@@ -294,8 +294,85 @@ button:focus {
 }
 
 
+/* ------ Forth screen "feedback"------ */
 
- /* ------ Slick Slider------ */
+.feedback {
+	background: #fff url(../img/feedBack/background.jpg) center no-repeat;
+	background-size: cover;
+	h3 {
+		margin: 9.8rem;
+	}
+	&-slider {
+		background-color: @btn-text-color;
+		box-shadow: 6px 10px 18px 0 rgba(0, 0, 0, 0.11);
+		padding: 5.5rem 6rem;
+		&__btn {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			width: 4rem;
+			height: 5rem;
+			border: none;
+			background-color: @icon-color;
+			img {
+				width: 50%;
+			}
+			&_prev {
+				left: -4rem;
+			}
+			&_next {
+				right: -4rem;
+			}
+		}
+		&__item {
+
+			p {
+				font-size: 1.6rem;
+			}
+			.media {
+				margin-top: 3rem;
+				font-size: 1.4rem;
+				.media-body {
+					margin-left: 0.9rem;
+				}
+				h5 {
+					font-size: 1.6rem;
+					.bold();
+				}
+				span {
+					display: block;
+					margin-bottom: 0.8rem;
+				}
+				
+			}
+			.feedback-slider__text {
+				position: relative;
+				margin-top: 2rem;
+				font-style: italic;
+				font-size: 1.5rem;
+				width: 45.4rem;
+				padding: 2rem 3.4rem 2rem 2.5rem;
+				border: 2px solid @icon-color;
+			}
+			.feedback-slider__text::before {
+				content: '';
+				height: 9px;
+			    width: 9px;
+			    background: url(../img/feedBack/dialog.jpg) center no-repeat;
+			    background-size: cover;
+			    position: absolute;
+			    left: 20px;
+			    bottom: 127px;
+			    
+			}
+			
+		}
+	}
+	
+}
+
+
+ /* ------ Slick Slider feature------ */
 .slick-active {
 	outline: none;
 }

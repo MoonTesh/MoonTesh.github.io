@@ -29,6 +29,12 @@
     		]
 	  });
 
+        /* ------ Slick Slider Feedback------ */
+        $('.feedback-slider').slick({
+            prevArrow:'<button type="button" class="feedback-slider__btn feedback-slider__btn_prev"><img src="img/feedback/prevArrow.svg"></button>',
+            nextArrow:'<button type="button" class="feedback-slider__btn feedback-slider__btn_next"><img src="img/feedback/nextArrow.svg"></button>'
+        });
+
        /* ------ Modal Windows------ */ 
        $('.popup-btn').on('click', function(event){
             event.preventDefault();
