@@ -298,7 +298,7 @@ button:focus {
   border: 2px solid #70c849;
   line-height: 18px;
 }
-.feedback-slider__item::before {
+.feedback-slider__item .feedback-slider__text::before {
   content: '';
   height: 9px;
   width: 9px;

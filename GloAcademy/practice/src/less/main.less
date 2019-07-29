@@ -354,18 +354,18 @@ button:focus {
 				padding: 2rem 1.2rem 2rem 1.2rem;
 				border: 2px solid @icon-color;
 				line-height: 18px;
+				&::before {
+					content: '';
+					height: 9px;
+				    width: 9px;
+				    background: url(../img/feedback/dialog.jpg) center center no-repeat;
+				    background-size: cover;
+				    position: absolute;
+				    left: 20px;
+				    bottom: 93px;
+				}
 			}
-			&::before {
-				content: '';
-				height: 9px;
-			    width: 9px;
-			    background: url(../img/feedback/dialog.jpg) center center no-repeat;
-			    background-size: cover;
-			    position: absolute;
-			    left: 20px;
-			    bottom: 93px;
-			    
-			}
+			
 			
 		}
 	}
