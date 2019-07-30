@@ -31,3 +31,6 @@
 [Урок 18 - Аккордион(коллапс)+Таб](https://moontesh.github.io/GloAcademy/lesson18/ "Репозиторий GitHub")
 
 [Урок 19 - Анимация с библиотеками animate.css и wow.js](https://moontesh.github.io/GloAcademy/lesson19/ "Репозиторий GitHub")
+
+[Урок 20 - Видеофон на сайте с плагином vide.js и библиотекой coverr.co](https://moontesh.github.io/GloAcademy/lesson20/ "Репозиторий GitHub")
+
