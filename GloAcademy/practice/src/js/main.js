@@ -1,5 +1,15 @@
 	$(document).ready(function(){
 
+        // $(window).resize(function() {
+        //   if(document.documentElement.clientWidth < 575) {
+        //     $('.fotorama').fotorama({
+        //       thumbmargin: 15;
+        //       thumbwidth: 60;
+        //       thumbheight: 55
+        //     });
+        //   }
+        // });
+
         /* ------ Slick Slider------ */
 
         $('.features__slider').slick({
@@ -29,10 +39,22 @@
     		]
 	  });
 
+    
         /* ------ Slick Slider Feedback------ */
         $('.feedback-slider').slick({
             prevArrow:'<button type="button" class="feedback-slider__btn feedback-slider__btn_prev"><img src="img/feedback/prevArrow.svg"></button>',
-            nextArrow:'<button type="button" class="feedback-slider__btn feedback-slider__btn_next"><img src="img/feedback/nextArrow.svg"></button>'
+            nextArrow:'<button type="button" class="feedback-slider__btn feedback-slider__btn_next"><img src="img/feedback/nextArrow.svg"></button>',
+            responsive: [
+               {
+                    breakpoint: 767,
+                    settings: {
+                    slidesToShow: 1,
+                    arrows: false,
+                    dots: true
+                   
+                  }
+                } 
+            ]
         });
 
        /* ------ Modal Windows------ */ 

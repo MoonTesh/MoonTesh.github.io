@@ -59,12 +59,12 @@
 							<img src="img/logo-top.png" alt="ГИПСОЛИТ">
 						</a>
 					</div>
-					<div class="col-lg-3 offset-lg-3 col-md-5 offset-md-1 d-flex justify-content-end justify-content-md-center col-sm-9">
+					<div class="col-lg-4 offset-lg-1 col-md-5 offset-md-0 d-flex justify-content-end justify-content-md-end col-sm-9">
 						<a href="tel:+74957710508" class="tel">
 							+7 495 771 05 08
 						</a>
 					</div>
-					<div class="col-md-3 d-flex justify-content-end justify-content-sm-center">
+					<div class="col-md-4 d-flex justify-content-md-end justify-content-sm-center">
 						<button class="button header-btn popup-btn">
 							Получить консультацию
 						</button>
@@ -92,25 +92,25 @@
 							</p>
 						</div>
 
-						<form class="main-form text-center" action="#">
-							<h4 class="main-form__title">
+						<form class="form text-center" action="#">
+							<h4 class="form__title">
 								Для расчёта точной стоимости закажите <strong>выезд замерщика</strong>
 							</h4>
 							<label for="#">
 								Ваше имя
 							</label>
-							<input class="main-form__input" type="text" required>
+							<input class="form__input" type="text" required>
 							<label for="#">
 								Номер телефона
 							</label>
-							<input class="main-form__input" type="text" required>
-							<button class="main-form__btn button" type="submit">
+							<input class="form__input" type="tel" required>
+							<button class="form__btn button" type="submit">
 								Оставьте заявку
 							</button>
 							<small>
 								Приедем в день обращения*
 							</small>
-							<p class="main-form__info">
+							<p class="form__info">
 								* - выезды на замер осуществляются в рабоче дни Пн-Пт с 9:00 до 18:00
 							</p>
 						</form>
@@ -222,7 +222,7 @@
 								Уборка
 							</li>
 						</ul>
-						<price-block__button class="button">Заказать</price-block__button>
+						<button class="button price-block__button">Заказать</button>
 					</div>
 				</div>
 				<div class="col-lg-4">
@@ -247,7 +247,7 @@
 								Гарантия 2 года
 							</li>
 						</ul>
-						<price-block__button class="button">Заказать</price-block__button>
+						<button class="button price-block__button">Заказать</button>
 					</div>
 				</div>
 				<div class="col-lg-4">
@@ -265,7 +265,7 @@
 							<li class="price-block__item">Гарантия 2 года</li>
 							<li class="price-block__item">Можно сразу клеить обои</li>
 						</ul>
-						<price-block__button class="button">Заказать</price-block__button>
+						<button class="button price-block__button">Заказать</button>
 					</div>
 				</div>
 			</div>
@@ -279,120 +279,154 @@
 	<!---------  section 4 "feedback" --------->
 	<section id="feedback" class="feedback">
 		<div class="container">
-			<div class="row">
-				<div class="col-12">
-					<h3 class="section-title">
-						Отзывы
-					</h3>
-				</div>
-			</div>
+
+			<h3 class="section-title">
+				Отзывы
+			</h3>
+
 			<div class="feedback-slider">
-					<div class="feedback-slider__item">
-						<div class="row">
-							<div class="col-lg-6">
-								<div class="fotorama" data-nav="thumbs" data-thumbmargin="17" data-width="510" data-height="310">
-									<img src="img/feedback/1.jpg" alt="Client photo">
-									<img src="img/feedback/2.jpg" alt="Client photo">
-									<img src="img/feedback/3.jpg" alt="Client photo">
-									<img src="img/feedback/4.jpg" alt="Client photo">
-									<img src="img/feedback/5.jpg" alt="Client photo">
-									<img src="img/feedback/6.jpg" alt="Client photo">
-								</div>
-							</div>
-							<div class="col-lg-6">
-								<p>Объект: г.Москва, Нахимовский проспект д.10</p>
-								<p>Площадь:<strong> 357 м2</strong></p>
-								<p>Выполнен за: <strong>10 дней</strong></p>
-								<p>Стоимость: <strong>550 рублей за квадратный метр</strong></p>
-								<p>Особенности: <strong>перепады неровности стен достигали до 6 см</strong></p>
-								<div class="media">
-								  <img src="img/feedback/avatar1.png" class="mr-3" alt="Client">
-								  <div class="media-body">
-								    <span>Заказчик</span>
-								    <h5 class="mt-0">
-								    	Нахимов Артем
-								    </h5>
-								  </div>
-								</div>
-								<p class="feedback-slider__text">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. 
-
-								</p>
+				<div class="feedback-slider__item">
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="fotorama" data-nav="thumbs" data-thumbmargin="17" data-width="100%">
+								<img src="img/feedback/1.jpg" alt="Client photo">
+								<img src="img/feedback/2.jpg" alt="Client photo">
+								<img src="img/feedback/3.jpg" alt="Client photo">
+								<img src="img/feedback/4.jpg" alt="Client photo">
+								<img src="img/feedback/5.jpg" alt="Client photo">
+								<img src="img/feedback/6.jpg" alt="Client photo">
 							</div>
 						</div>
-					</div>
-					<div class="feedback-slider__item">
-						<div class="row">
-							<div class="col-lg-6">
-								<div class="fotorama" data-nav="thumbs" data-thumbmargin="17" data-width="510" data-height="310">
-									<img src="img/feedback/1.jpg" alt="Client photo">
-									<img src="img/feedback/2.jpg" alt="Client photo">
-									<img src="img/feedback/3.jpg" alt="Client photo">
-									<img src="img/feedback/4.jpg" alt="Client photo">
-									<img src="img/feedback/5.jpg" alt="Client photo">
-									<img src="img/feedback/6.jpg" alt="Client photo">
-								</div>
+						<div class="col-lg-6">
+							<p>Объект: г.Москва, Нахимовский проспект д.10</p>
+							<p>Площадь:<strong> 357 м2</strong></p>
+							<p>Выполнен за: <strong>10 дней</strong></p>
+							<p>Стоимость: <strong>550 рублей за квадратный метр</strong></p>
+							<p>Особенности: <strong>перепады неровности стен достигали до 6 см</strong></p>
+							<div class="media">
+							  <img src="img/feedback/avatar1.png" class="mr-3" alt="Client">
+							  <div class="media-body">
+							    <span>Заказчик</span>
+							    <h5 class="mt-0">
+							    	Нахимов Артем
+							    </h5>
+							  </div>
 							</div>
-							<div class="col-lg-6">
-								<p>Объект: г.Москва, Нахимовский проспект д.10</p>
-								<p>Площадь: <strong>357 м2</strong></p>
-								<p>Выполнен за: <strong>10 дней</strong></p>
-								<p>Стоимость:<strong> 550 рублей за квадратный метр</strong></p>
-								<p>Особенности: <strong>перепады неровности стен достигали до 6 см</strong></p>
-								<div class="media">
-								  <img src="img/feedback/avatar1.png" class="mr-3" alt="Client">
-								  <div class="media-body">
-								    <span>Заказчик</span>
-								    <h5 class="mt-0">
-								    	Нахимов Артем
-								    </h5>
-								  </div>
-								</div>
-								<p class="feedback-slider__text">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. 
-
-								</p>
-							</div>
+							<p class="feedback-slider__text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. 
+							</p>
 						</div>
 					</div>
-					<div class="feedback-slider__item">
-						<div class="row">
-							<div class="col-lg-6">
-								<div class="fotorama" data-nav="thumbs" data-thumbmargin="17" data-width="510" data-height="310">
-									<img src="img/feedback/1.jpg" alt="Client photo">
-									<img src="img/feedback/2.jpg" alt="Client photo">
-									<img src="img/feedback/3.jpg" alt="Client photo">
-									<img src="img/feedback/4.jpg" alt="Client photo">
-									<img src="img/feedback/5.jpg" alt="Client photo">
-									<img src="img/feedback/6.jpg" alt="Client photo">
-								</div>
-							</div>
-							<div class="col-lg-6">
-								<p>Объект: г.Москва, Нахимовский проспект д.10</p>
-								<p>Площадь: <strong>357 м2</strong></p>
-								<p>Выполнен за: <strong>10 дней</strong></p>
-								<p>Стоимость: <strong>550 рублей за квадратный метр</strong></p>
-								<p>Особенности: <strong>перепады неровности стен достигали до 6 см</strong></p>
-								<div class="media">
-								  <img src="img/feedback/avatar1.png" class="mr-3" alt=Client.">
-								  <div class="media-body">
-								  	<span>Заказчик</span>
-								    <h5 class="mt-0">
-								    	Нахимов Артем
-								    </h5>
-								  </div>
-								</div>
-								<p class="feedback-slider__text">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. 
-
-								</p>
+				</div> <!--feedback-slider__item 1-->
+				<div class="feedback-slider__item">
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="fotorama" data-nav="thumbs" data-thumbmargin="17" data-width="100%">
+								<img src="img/feedback/1.jpg" alt="Client photo">
+								<img src="img/feedback/2.jpg" alt="Client photo">
+								<img src="img/feedback/3.jpg" alt="Client photo">
+								<img src="img/feedback/4.jpg" alt="Client photo">
+								<img src="img/feedback/5.jpg" alt="Client photo">
+								<img src="img/feedback/6.jpg" alt="Client photo">
 							</div>
 						</div>
+						<div class="col-lg-6">
+							<p>Объект: г.Москва, Нахимовский проспект д.10</p>
+							<p>Площадь: <strong>357 м2</strong></p>
+							<p>Выполнен за: <strong>10 дней</strong></p>
+							<p>Стоимость:<strong> 550 рублей за квадратный метр</strong></p>
+							<p>Особенности: <strong>перепады неровности стен достигали до 6 см</strong></p>
+							<div class="media">
+							  <img src="img/feedback/avatar1.png" class="mr-3" alt="Client">
+							  <div class="media-body">
+							    <span>Заказчик</span>
+							    <h5 class="mt-0">
+							    	Нахимов Артем
+							    </h5>
+							  </div>
+							</div>
+							<p class="feedback-slider__text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. 
+
+							</p>
+						</div>
 					</div>
-				</div>	
-		</div>
+				</div> <!--feedback-slider__item 2-->
+				<div class="feedback-slider__item">
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="fotorama" data-nav="thumbs" data-thumbmargin="17" data-width="100%">
+								<img src="img/feedback/1.jpg" alt="Client photo">
+								<img src="img/feedback/2.jpg" alt="Client photo">
+								<img src="img/feedback/3.jpg" alt="Client photo">
+								<img src="img/feedback/4.jpg" alt="Client photo">
+								<img src="img/feedback/5.jpg" alt="Client photo">
+								<img src="img/feedback/6.jpg" alt="Client photo">
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<p>Объект: г.Москва, Нахимовский проспект д.10</p>
+							<p>Площадь: <strong>357 м2</strong></p>
+							<p>Выполнен за: <strong>10 дней</strong></p>
+							<p>Стоимость: <strong>550 рублей за квадратный метр</strong></p>
+							<p>Особенности: <strong>перепады неровности стен достигали до 6 см</strong></p>
+							<div class="media">
+							  <img src="img/feedback/avatar1.png" class="mr-3" alt="Client">
+							  <div class="media-body">
+							  	<span>Заказчик</span>
+							    <h5 class="mt-0">
+							    	Нахимов Артем
+							    </h5>
+							  </div>
+							</div>
+							<p class="feedback-slider__text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. 
+
+							</p>
+						</div>
+					</div>
+				</div> <!--feedback-slider__item 3-->
+			</div> <!--feedback-slider-->
+
+			<div class="row">
+				<div class="col-lg-10 offset-lg-1 text-center">
+
+					<div class="feedback-form form">
+						<h4 class="feedback-form__title">
+							Хотите так же? Оставьте Ваши контактные данные
+						</h4>
+						<form action="#">
+							<div class="row">
+								<div class="col-md-6">
+									<label for="#">
+										Ваше имя
+									</label>
+									<input class="form__input" type="text" required>	
+								</div> <!-- col-md-6-->
+								<div class="col-md-6">
+									<label for="#">
+										Номер телефона
+									</label>
+									<input class="form__input" type="tel" required>
+								</div> <!-- col-md-6-->
+							</div> <!-- row -->
+							<button class="form__btn button feedback-form__btn" type="submit">
+								Оставьте заявку
+							</button>
+							<small class="callback d-block d-sm-none">
+								Перезвоним в ближайшее время
+							</small>
+						</form>
+					</div> <!--feedback-form -->
+
+				</div> <!-- col-md-8 offset-md-2-->
+			</div>	<!--row-->
+		</div> <!--container-->
+		<img class="hand" src="img/feedback/hand.png" alt="">
 	</section>
 
+
+<!---------  section 5 "" --------->
 	<footer id="footer" class="footer">
 		<div class="container">
 			<div class="row">
@@ -414,21 +448,21 @@
 				<p class="popup__text">
 					Оставьте контактные данные для связи
 				</p>
-				<div class="popup__form main-form">
+				<div class="popup__form form">
 					<form action="#">
 						<label for="#">
 							Ваше имя
 						</label>
-						<input class="main-form__input" type="text" required>
+						<input class="form__input" type="text" required>
 						<label for="#">
 							Номер телефона
 						</label>
-						<input class="main-form__input" type="text" required>
+						<input class="form__input" type="text" required>
 						<label for="#" >
 							Сообщение
 						</label>
-						<textarea class="main-form__input" rows="3"></textarea>
-						<button class="main-form__btn button" type="submit">
+						<textarea class="form__input" rows="3"></textarea>
+						<button class="form__btn button" type="submit">
 							Оставьте заявку
 						</button>
 					</form>
