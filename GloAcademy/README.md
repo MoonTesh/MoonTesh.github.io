@@ -34,3 +34,5 @@
 
 [Урок 20 - Видеофон на сайте с плагином vide.js и библиотекой coverr.co](https://moontesh.github.io/GloAcademy/lesson20/ "Репозиторий GitHub")
 
+[Урок 21 - parallax + rellax эффекты](https://moontesh.github.io/GloAcademy/lesson21/ "Репозиторий GitHub")
+
