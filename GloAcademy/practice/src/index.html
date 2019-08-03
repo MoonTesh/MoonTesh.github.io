@@ -26,8 +26,8 @@
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+	<!---------  First screen --------->
 	<main id="main" class="main">
-	<!---------  header --------->
 		<div class="tel d-flex justify-content-around align-items-center d-sm-none">
 			<div tel-wrap>
 				<a href="tel:+74957710508" class="tel">
@@ -118,8 +118,9 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> <!--//container-->
 	</main>
+	
 	<!---------  section 2 "features-section" --------->
 	<section id="features-section" class="features-section">
 		<div class="container">
@@ -180,11 +181,12 @@
 								выгодные цены.
 							</p>
 						</div>
-					</div>
-				</div>
+					</div> <!--//features__slider-->
+				</div> <!--//features-->
 
-		</div>
+		</div> <!--//container-->
 	</section>
+	
 	<!---------  section 3 "price-section" --------->
 	<section id="price-section" class="price-section">
 		<div class="container">
@@ -198,13 +200,13 @@
 							Выберите вариант, который подходит Вам:
 						</p>
 					</div>
-				</div>
+				</div> 
 				<div class="col-lg-4 text-lg-right">
 					<button class="price-head__button button" data-toggle="modal">
 						Рассчитать точную стоимость
 					</button>
 				</div>
-			</div>
+			</div> <!--//row-->
 			<div class="row">
 				<div class="col-lg-4">
 					<div class="price-block">
@@ -268,14 +270,15 @@
 						<button class="button price-block__button">Заказать</button>
 					</div>
 				</div>
-			</div>
+			</div> <!--//row-->
 			<div class="row d-sm-none">
 				<div class="col-12"><button class="button">
 					Рассчитать точную стоимость
 				</button></div>
-			</div>
-		</div>
+			</div> <!--//row-->
+		</div> <!--//container-->
 	</section>
+
 	<!---------  section 4 "feedback" --------->
 	<section id="feedback" class="feedback">
 		<div class="container">
@@ -317,7 +320,7 @@
 							</p>
 						</div>
 					</div>
-				</div> <!--feedback-slider__item 1-->
+				</div> <!--//feedback-slider__item 1-->
 				<div class="feedback-slider__item">
 					<div class="row">
 						<div class="col-lg-6">
@@ -351,7 +354,7 @@
 							</p>
 						</div>
 					</div>
-				</div> <!--feedback-slider__item 2-->
+				</div> <!--//feedback-slider__item 2-->
 				<div class="feedback-slider__item">
 					<div class="row">
 						<div class="col-lg-6">
@@ -385,10 +388,10 @@
 							</p>
 						</div>
 					</div>
-				</div> <!--feedback-slider__item 3-->
-			</div> <!--feedback-slider-->
+				</div> <!--//feedback-slider__item 3-->
+			</div> <!--//feedback-slider-->
 
-			<div class="row">
+			<div class="row"> 
 				<div class="col-lg-10 offset-lg-1 text-center">
 
 					<div class="feedback-form form">
@@ -402,14 +405,14 @@
 										Ваше имя
 									</label>
 									<input class="form__input" type="text" required>	
-								</div> <!-- col-md-6-->
+								</div> <!-- //col-md-6-->
 								<div class="col-md-6">
 									<label for="#">
 										Номер телефона
 									</label>
 									<input class="form__input" type="tel" required>
-								</div> <!-- col-md-6-->
-							</div> <!-- row -->
+								</div> <!-- //col-md-6-->
+							</div> <!-- //row -->
 							<button class="form__btn button feedback-form__btn" type="submit">
 								Оставьте заявку
 							</button>
@@ -417,16 +420,221 @@
 								Перезвоним в ближайшее время
 							</small>
 						</form>
-					</div> <!--feedback-form -->
+					</div> <!--//feedback-form -->
 
-				</div> <!-- col-md-8 offset-md-2-->
-			</div>	<!--row-->
-		</div> <!--container-->
+				</div> <!-- //col-md-8 offset-md-2-->
+			</div>	<!--//row-->
+		</div> <!--//container-->
 		<img class="hand" src="img/feedback/hand.png" alt="">
 	</section>
 
+	<!---------  section 5 "scheme" --------->
+	<section id="scheme" class="scheme">
+		<div class="container">
 
-<!---------  section 5 "" --------->
+			<div class="scheme-title text-center">
+				<h3 class="section-title">
+					Схема работы
+				</h3>
+				<p>
+					Работа над вашим объектом будет включать в себя следующие этапы:
+				</p>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-3 col-md-5 offset-md-1">				
+					<div class="scheme-item">
+						<img src="img/scheme/1.png" alt="Заявка">
+						<h4>Заявка</h4>
+						<p>
+							Оставляете онлайн заявку или звоните +7(495&nbsp;771&nbsp;05&nbsp;08
+						</p>
+					</div>
+				</div>
+
+				<div class="col-lg-3 offset-lg-1 col-md-5 offset-md-1">
+					<div class="scheme-item">
+						<img src="img/scheme/2.png" alt="Выезд специалиста">
+						<h4>Выезд специалиста</h4>
+						<p>
+							В течение 1 рабочего дня к Вам приезжает специалист, который выполнит замеры для точной стоимости работ
+						</p>
+					</div>
+				</div>
+
+				<div class="col-lg-3 offset-lg-1 col-md-5 offset-md-1">
+					<div class="scheme-item">
+						<img src="img/scheme/3.png" alt="Составление договора">
+						<h4>Составление договора</h4>
+						<p>
+							Готовим договор и согласовываем с Вами
+						</p>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-5 offset-md-1">
+					<div class="scheme-item">
+						<img src="img/scheme/4.png" alt="Начало работ">
+						<h4>Начало работ</h4>
+						<p>
+							Доставляем материалы, оборудование, подписываем договор и начинаем работы
+						</p>
+					</div>
+				</div>
+
+				<div class="col-lg-3 offset-lg-1 col-md-5 offset-md-1">
+					<div class="scheme-item">
+						<img src="img/scheme/5.png" alt="Завершение работ">
+						<h4>Завершение работ</h4>
+						<p>
+							После окончания работ Вы проверяете качество и подписываете акт сдачи, производите оплату.
+						</p>
+					</div>
+				</div><!--//col-->
+			</div> <!--//row-->
+
+		</div> <!--//container-->
+	</section>
+
+	<!---------  section 6 "incluse" --------->
+	<section id="incluse" class="incluse">
+		<div class="container">
+
+			<div class="incluse-title text-center">
+				<h3 class="section-title section-title_green">
+					Все на 100% включено!
+				</h3>
+				<p>
+					При выполнении работ с нашим материалом в стоимость входит:
+				</p>
+			</div>
+
+			<div class="row">
+
+				<div class="col-lg-3 col-md-4 col-sm-6">
+					<div class="media incluse-item">
+						<div class="number mr-4">
+							<span>
+								1.
+							</span>
+						</div>
+						<div class="media-body">
+							<h5 >
+								Материал
+							</h5>
+							<p>
+								Штукатурка, грунтовка или бетоноконтакт, маяки, сетка на стыки
+							</p>
+						</div> <!-- //media-body -->
+					</div> <!-- //incluse-item -->
+				</div> <!-- //col -->
+				<div class="col-lg-3 col-md-4 col-sm-6">
+					<div class="media incluse-item">
+						<div class="number mr-4">
+							<span>
+								2.
+							</span>
+						</div>
+						<div class="media-body">
+							<h5>
+								Доставка оборудования и материала на объект
+							</h5>
+						</div> <!-- //media-body -->
+					</div> <!-- //incluse-item -->
+				</div> <!-- //col -->
+				<div class="col-lg-3 col-md-4 col-sm-6">
+					<div class="media incluse-item">
+						<div class="number mr-4">
+							<span>
+								3.
+							</span>
+						</div>
+						<div class="media-body">
+							<h5>
+								Подготовка поверхности 
+							</h5>
+							<p>
+								(очистка, грунтование)
+							</p>
+						</div> <!-- //media-body -->
+					</div> <!-- //incluse-item -->
+				</div> <!-- //col -->
+				<div class="col-lg-3 col-md-4 col-sm-6">
+					<div class="media incluse-item">
+						<div class="number mr-4">
+							<span>
+								4.
+							</span>
+						</div>
+						<div class="media-body">
+							<h5>
+								Установка маяков
+							</h5>
+						</div> <!-- //media-body -->
+					</div> <!-- //incluse-item -->
+				</div> <!-- //col -->
+				<div class="col-lg-3 col-md-4 col-sm-6">
+					<div class="media incluse-item">
+						<div class="number mr-4">
+							<span>
+								5.
+							</span>
+						</div>
+						<div class="media-body">
+							<h5>
+								Оштукатуривание поверхности
+							</h5>
+						</div> <!-- //media-body -->
+					</div> <!-- //incluse-item -->
+				</div> <!-- //col -->
+				<div class="col-lg-3 col-md-4 col-sm-6">
+					<div class="media incluse-item">
+						<div class="number mr-4">
+							<span>
+								6.
+							</span>
+						</div>
+						<div class="media-body">
+							<h5>
+								Удаление маяков
+							</h5>
+						</div> <!-- //media-body -->
+					</div> <!-- //incluse-item -->
+				</div> <!-- //col -->
+				<div class="col-lg-3 col-md-4 col-sm-6">
+					<div class="media incluse-item">
+						<div class="number mr-4">
+							<span>
+								7.
+							</span>
+						</div>
+						<div class="media-body">
+							<h5>
+								Глянцевание
+							</h5>
+						</div> <!-- //media-body -->
+					</div> <!-- //incluse-item -->
+				</div> <!-- //col -->
+				<div class="col-lg-3 col-md-4 col-sm-6">
+					<div class="media incluse-item">
+						<div class="number mr-4">
+							<span>
+								8.
+							</span>
+						</div>
+						<div class="media-body">
+							<h5>
+								Уборка и вывоз мусора
+							</h5>
+						</div> <!-- //media-body -->
+					</div> <!-- //incluse-item -->
+				</div> <!-- //col -->
+
+ 			</div> <!--//row--> <!-- //col -->
+
+		</div> <!--//container-->
+	</section>
+
 	<footer id="footer" class="footer">
 		<div class="container">
 			<div class="row">

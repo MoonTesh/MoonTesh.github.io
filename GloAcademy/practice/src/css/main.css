@@ -351,6 +351,70 @@ button:focus {
   left: 0;
   max-width: 30%;
 }
+/* ------ Five screen "scheme"------ */
+.scheme {
+  background: #ffffff url(../img/scheme/bg.png) bottom right -29rem no-repeat;
+}
+.scheme-title p {
+  font-size: 1.6rem;
+  margin: 6rem 0 0;
+}
+.scheme h4 {
+  margin: 3.8rem 0 3.0rem;
+  font-family: 'ProximaNova_bold', "Arial", sans-serif;
+  font-size: 2.2rem;
+}
+.scheme p {
+  font-size: 1.7rem;
+  line-height: 1.8rem;
+}
+.scheme img {
+  margin-top: 7rem;
+}
+/* ------ Six screen "incluse"------ */
+.incluse {
+  background-color: #f5f5f5;
+}
+.incluse .incluse-title .section-title_green {
+  color: #358015;
+  font-size: 4.8rem;
+}
+.incluse .incluse-title p {
+  font-size: 1.6em;
+  margin-top: 5rem;
+}
+.incluse .incluse-item {
+  margin-top: 10rem;
+}
+.incluse .incluse-item .number {
+  width: 4.8rem;
+  height: 4.8rem;
+  border: 2px solid #358f0f;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 4.1rem;
+  display: flex;
+  align-items: center;
+}
+.incluse .incluse-item .number span {
+  height: 3.8rem;
+  width: 3.8rem;
+  display: block;
+  font-family: 'ProximaNova_bold', "Arial", sans-serif;
+  font-size: 2rem;
+  background-color: #358f0f;
+  border-radius: 50%;
+  margin: auto;
+  color: #fff;
+}
+.incluse .incluse-item h5 {
+  font-family: 'ProximaNova_bold', "Arial", sans-serif;
+  font-size: 1.6rem;
+  margin-top: 1.4rem;
+}
+.incluse .incluse-item p {
+  font-size: 1.3rem;
+}
 /* ------ Slick Slider feature------ */
 .slick-active {
   outline: none;
@@ -576,6 +640,16 @@ button:focus {
     width: 50%;
     transform: translateX(24%);
   }
+  .scheme-item {
+    max-width: 65%;
+  }
+  .scheme {
+    background-image: none;
+  }
+  .scheme-item {
+    margin: auto;
+    text-align: center;
+  }
 }
 /* 320-575px */
 @media screen and (max-width: 575px) {
@@ -589,7 +663,7 @@ button:focus {
     transform: translateX(-227%) translateY(-542%);
   }
   section {
-    padding: 5rem 0 3.7rem;
+    padding: 4rem 0 3.7rem;
   }
   .main {
     background: #ffffff url(../img/1.jpg) left center no-repeat;
@@ -675,5 +749,20 @@ button:focus {
   .slick-dots {
     width: 50%;
     transform: translateX(44%);
+  }
+  .scheme-title p {
+    margin: 2.7rem 0 0;
+  }
+  .scheme-item {
+    max-width: 80%;
+  }
+  .incluse .incluse-title .section-title_green {
+    font-size: 2.6rem;
+  }
+  .incluse .incluse-title p {
+    margin: 2.8rem 0 1.5rem;
+  }
+  .incluse .incluse-item {
+    margin-top: 3.0rem;
   }
 }
