@@ -36,3 +36,5 @@
 
 [Урок 21 - parallax + rellax эффекты](https://moontesh.github.io/GloAcademy/lesson21/ "Репозиторий GitHub")
 
+[Урок 22 - Yandex карта интерактивная](https://moontesh.github.io/GloAcademy/lesson22/ "Репозиторий GitHub")
+
