@@ -1,0 +1,73 @@
+p {
+	margin: 0;
+}
+
+.map {
+	position: relative;
+}
+.contacts {
+	position: absolute;
+	top: 0;
+	height: 100%;
+	background-color: #c60b0b;
+	color: white;
+	width: 380px;
+	padding: 69px 0;
+}
+
+.contacts h2 {
+	font-size: 30px;
+	font-weight: 400;
+}
+
+footer {
+	padding: 20px 0 15px;
+}
+.contacts p {
+	width: 260px;
+	margin: 35px auto 0;
+	font-size: 18px;
+	line-height: 18px;
+}
+.mail {
+	text-decoration: underline;
+}
+.logo-text {
+	margin-left: 20px;
+	font-size: 16px;
+	line-height: 16px;
+	display:table-cell;
+	vertical-align: middle;
+}
+.sertificate {
+	color: #666666;
+	font-size: 14px;
+	line-height: 14px;
+}
+.tel {
+	font-size: 22px;
+	color: #000;
+}
+.tel:hover {
+	color: #000;
+	text-decoration: none;
+}
+.adress {
+	color: #b3b3b3;
+	font-size: 14px;
+	line-height: 14px;
+}
+.text-wrapper {
+	display:table;
+}
+.logo {
+	margin-right: 20px;
+	align-items: center;
+}
+.sertificat-wrapper {
+	display: table;
+}
+.sertificate {
+	display: table-cell;
+	vertical-align: middle;
+}
