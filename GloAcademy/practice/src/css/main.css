@@ -415,6 +415,91 @@ button:focus {
 .incluse .incluse-item p {
   font-size: 1.3rem;
 }
+/* ------ seventh screen "problems"------ */
+.problems {
+  position: relative;
+}
+.problems .section-title {
+  margin-bottom: 8rem;
+}
+.problems h4 {
+  font-family: 'ProximaNova_bold', "Arial", sans-serif;
+  font-size: 2.1rem;
+}
+.problems-list {
+  padding: 2rem;
+  min-height: 36rem;
+  margin-bottom: 2rem;
+}
+.problems-list li {
+  position: relative;
+  margin-top: 3.8rem;
+  font-size: 1.4rem;
+  margin-left: 4rem;
+}
+.problems-list li:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -34px;
+  width: 3rem;
+  height: 3rem;
+}
+.problems-list_bad {
+  border: 4px solid #b3b3b3;
+}
+.problems-list_bad h4 {
+  opacity: 0.5;
+}
+.problems-list_bad li::before {
+  background: url(../img/problems/no.svg) center center no-repeat;
+  background-size: 50%;
+}
+.problems-list_good {
+  border: 4px solid #358015;
+}
+.problems-list_good li {
+  line-height: 1.6rem;
+}
+.problems-list_good li::before {
+  background: url(../img/problems/yes.svg) center center no-repeat;
+  background-size: 70%;
+}
+.problems img {
+  max-width: 22rem;
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  transform: translateX(27%);
+}
+.problems-des h4 {
+  margin-bottom: 3rem;
+  text-align: center;
+  font-family: 'ProximaNova_bold', "Arial", sans-serif;
+  font-size: 1.8rem;
+}
+.problems-des li {
+  margin-bottom: 2.5rem;
+  font-size: 1.3rem;
+}
+.problems-des__item {
+  margin-bottom: 1.6rem;
+  font-family: 'ProximaNova_bold', "Arial", sans-serif;
+  margin-left: 2rem;
+}
+.problems-des__solution {
+  padding: 1.5rem 2.5rem 2.0rem 1.5rem;
+  color: #70c849;
+  border: 3px solid #70c849;
+  max-width: 45rem;
+}
+.problems-des__solution h5 {
+  font-family: 'ProximaNova_bold', "Arial", sans-serif;
+}
+.problems-des__solution p {
+  line-height: 2.4rem;
+}
 /* ------ Slick Slider feature------ */
 .slick-active {
   outline: none;
@@ -537,6 +622,9 @@ button:focus {
 }
 /* 768-991px */
 @media screen and (max-width: 991px) {
+  .section-title {
+    margin-bottom: 5rem!important;
+  }
   .price-block__button {
     padding: 1.3rem 6rem;
     margin: 2rem 0;
@@ -580,9 +668,22 @@ button:focus {
   .feedback h3 {
     margin-bottom: 4.5rem;
   }
+  .problems img {
+    max-width: 20rem;
+    bottom: 0;
+    right: 50%;
+    transform: translateX(34%);
+  }
+  .problems-list {
+    padding: 2rem 5rem 2rem 3rem;
+    min-height: 42rem;
+  }
 }
 /* 576-767px */
 @media screen and (max-width: 767px) {
+  section {
+    padding: 7rem 0;
+  }
   .form small {
     display: block;
     margin-bottom: 2rem;
@@ -649,6 +750,12 @@ button:focus {
   .scheme-item {
     margin: auto;
     text-align: center;
+  }
+  .problems img {
+    display: none;
+  }
+  .problems-list {
+    min-height: auto;
   }
 }
 /* 320-575px */
@@ -764,5 +871,8 @@ button:focus {
   }
   .incluse .incluse-item {
     margin-top: 3.0rem;
+  }
+  .problems-list {
+    display: none;
   }
 }

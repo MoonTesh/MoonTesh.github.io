@@ -53,7 +53,7 @@
 		font-size: 1.8rem;
 		margin: 0 auto 3.9rem;
 		strong {
-			.bold;
+			.bold();
 		}
 	}
 	label {
@@ -89,7 +89,7 @@ html {
 	font-size: 10px;
 }
 body {
-	.reg;
+	.reg();
 	color: @text;
 }
 section {
@@ -483,7 +483,100 @@ button:focus {
 			font-size: 1.3rem;
 		}
 	}
-	
+}
+
+/* ------ seventh screen "problems"------ */
+.problems {
+	position: relative;
+	.section-title {
+		margin-bottom: 8rem;
+	}
+	h4 {
+		.bold();
+		font-size: 2.1rem;
+	}
+	&-list {
+		padding: 2rem;
+		min-height: 36rem;
+		margin-bottom: 2rem;
+		li {
+			position: relative;
+			margin-top: 3.8rem;
+			font-size: 1.4rem;
+			margin-left: 4rem;
+			&:before {
+				content: '';
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				left: -34px;
+				width: 3rem;
+				height: 3rem;	
+				
+			}
+		}
+			
+		&_bad {
+			border: 4px solid #b3b3b3;
+			h4 {
+				opacity: 0.5;
+			}
+			li {
+				&::before {
+					background: url(../img/problems/no.svg) center center no-repeat;
+					background-size: 50%;
+				}
+			}
+		}
+		&_good {
+			border: 4px solid #358015;
+			li {
+				line-height: 1.6rem;
+				&::before {
+					background: url(../img/problems/yes.svg) center center no-repeat;
+					background-size: 70%;
+				}
+			}
+		}
+
+	}
+	img {
+		max-width: 22rem;
+		position: absolute;
+		bottom: 0;
+		right: 50%;
+		transform: translateX(27%);
+	}
+	&-des {
+		h4 {
+			margin-bottom: 3rem;
+			text-align: center;
+			.bold();
+			font-size: 1.8rem;
+		}
+		li {
+			margin-bottom: 2.5rem;
+			font-size: 1.3rem;
+			
+		}
+		&__item {
+			margin-bottom: 1.6rem;
+			.bold();
+			margin-left: 2rem;
+		}
+		&__solution {
+			padding: 1.5rem 2.5rem 2.0rem 1.5rem;
+			color: @icon-color;
+			border: 3px solid @icon-color;
+			max-width: 45rem;
+			h5 {
+				.bold();
+			}
+			p {
+				line-height: 2.4rem;
+			}
+		}
+	}
 
 }
 
@@ -625,12 +718,21 @@ button:focus {
 			}
 		}
 	}
+	.problems {
+		// img {
+		// 	max-width: 19%;
+		// }
+
+	}
 
 
 }
 
 /* 768-991px */
 @media screen and (max-width: 991px) {
+	.section-title {
+		margin-bottom: 5rem!important;
+	}
 	.price-block__button {
 	    padding: 1.3rem 6rem;
 	    margin: 2rem 0;
@@ -678,6 +780,18 @@ button:focus {
     .feedback h3 {
 	    margin-bottom: 4.5rem;
 	}
+	.problems {
+		img {
+			max-width: 20rem;
+			bottom: 0;
+			right: 50%;
+			transform: translateX(34%);
+		}
+		&-list {
+			padding: 2rem 5rem 2rem 3rem;
+    		min-height: 42rem;
+		}
+	}
 
 
 
@@ -686,6 +800,9 @@ button:focus {
 
 /* 576-767px */
 @media screen and (max-width: 767px) {
+	section {
+		padding: 7rem 0;
+	}
 	.form {
 		small {
 			display: block;
@@ -762,10 +879,20 @@ button:focus {
 		margin: auto;
 		text-align: center;
 	}	
+	.problems {
+		img {
+			display: none;
+		}
+		&-list {
+			min-height: auto;
+		}
+		
+	}
 
 }
 /* 320-575px */
 @media screen and (max-width: 575px) {
+
 	.feedback {
 		// .container {
 		// 	padding: 0;
@@ -902,6 +1029,12 @@ button:focus {
 		.incluse-item {
 			margin-top: 3.0rem;
 		}
+	}
+	.problems {
+		&-list {
+			display: none;
+		}
+		
 	}
 }
 	
