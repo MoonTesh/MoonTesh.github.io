@@ -38,3 +38,5 @@
 
 [Урок 22 - Yandex карта интерактивная](https://moontesh.github.io/GloAcademy/lesson22/ "Репозиторий GitHub")
 
+[Урок 23 - Покупка хостинга и домена](https://gipsolit.firerainbow.ru)
+
