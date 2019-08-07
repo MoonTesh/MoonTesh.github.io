@@ -114,9 +114,14 @@ button:focus {
   outline: none;
 }
 .section-title {
+  text-align: center;
+}
+.section-title h3 {
   font-family: 'ProximaNova_bold', "Arial", sans-serif;
   font-size: 3.6rem;
-  text-align: center;
+}
+.section-title p {
+  font-size: 1.7rem;
 }
 .section-title_light {
   color: #ffffff;
@@ -205,8 +210,6 @@ button:focus {
 }
 .price-head__text {
   margin: 5.2rem 0 9rem;
-  font-size: 1.7rem;
-  color: #ffffff;
 }
 .price-head__button {
   display: inline-block;
@@ -353,7 +356,7 @@ button:focus {
 }
 /* ------ Five screen "scheme"------ */
 .scheme {
-  background: #ffffff url(../img/scheme/bg.png) bottom right -29rem no-repeat;
+  background: #ffffff url(../img/scheme/bg.png) bottom right -36rem no-repeat;
 }
 .scheme-title p {
   font-size: 1.6rem;
@@ -499,6 +502,55 @@ button:focus {
 }
 .problems-des__solution p {
   line-height: 2.4rem;
+}
+/* ------ eighth screen "materials"------ */
+.materials {
+  background: #ffffff url(../img/materials/materialsbg.jpg) center center no-repeat;
+}
+.materials .section-title p {
+  margin: 5.2rem 0 7rem;
+}
+.materials .materials-slider__block {
+  text-align: center;
+}
+.materials .materials-slider__block h3 {
+  font-family: 'ProximaNova_bold', "Arial", sans-serif;
+  font-size: 2.2rem;
+  margin: 2rem 0 2.5rem;
+}
+.materials .materials-slider__block p {
+  font-size: 1.9rem;
+  max-width: 24rem;
+  margin: 0 auto;
+  min-height: 7.3rem;
+}
+.materials .materials-slider__block a {
+  color: #6ba253;
+  position: relative;
+  display: inline-block;
+  font-size: 1.6rem;
+}
+.materials .materials-slider__block a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: inline-block;
+  width: 100%;
+  height: 2px;
+  background-color: #dde7d9;
+}
+.materials .section-link {
+  margin-top: 2rem;
+  font-size: 2rem;
+}
+.materials .section-link a:not(:last-child) {
+  color: #6ba253;
+  text-decoration: underline;
+}
+.materials .section-link a:last-child {
+  font-family: 'ProximaNova_bold', "Arial", sans-serif;
+  color: #000;
 }
 /* ------ Slick Slider feature------ */
 .slick-active {
@@ -772,6 +824,13 @@ button:focus {
   section {
     padding: 4rem 0 3.7rem;
   }
+  .section-title h3 {
+    font-size: 2.4rem;
+  }
+  .section-title p {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
   .main {
     background: #ffffff url(../img/1.jpg) left center no-repeat;
     background-size: cover;
@@ -871,8 +930,20 @@ button:focus {
   }
   .incluse .incluse-item {
     margin-top: 3.0rem;
+    align-items: center;
+  }
+  .incluse .incluse-item h5 {
+    margin: 0;
+  }
+  .incluse .incluse-item p {
+    line-height: 1.4rem;
+    margin: 0;
   }
   .problems-list {
     display: none;
+  }
+  .materials .section-link {
+    font-size: 1.6rem;
+    line-height: 2rem;
   }
 }

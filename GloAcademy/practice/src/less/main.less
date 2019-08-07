@@ -126,7 +126,7 @@ ul {
 	display: inline-block;
 	letter-spacing: 0.03rem;
 	font-size: 1.2rem;
-	.bold;
+	.bold();
 	&:hover {
 		background: darken(@btn-color, 5%);
 	}
@@ -145,8 +145,14 @@ button:focus {
 }
 
 .section-title {
-	.bold;
-	font-size: 3.6rem;
+	h3 {
+		.bold();
+		font-size: 3.6rem;
+	}
+	p {
+		font-size: 1.7rem;
+	}
+	
 	text-align: center;
 }
 
@@ -255,8 +261,6 @@ button:focus {
 	&-head{
 		&__text {
 			margin: 5.2rem 0 9rem;
-			font-size: 1.7rem;
-			color: @btn-text-color;
 		}
 		&__button {
 			display: inline-block;
@@ -416,7 +420,7 @@ button:focus {
 
 /* ------ Five screen "scheme"------ */
 .scheme {
-	background: #fff url(../img/scheme/bg.png) bottom right -29rem no-repeat;
+	background: #fff url(../img/scheme/bg.png) bottom right -36rem no-repeat;
 	&-title {
 		p {
 			font-size: 1.6rem;
@@ -515,7 +519,6 @@ button:focus {
 				
 			}
 		}
-			
 		&_bad {
 			border: 4px solid #b3b3b3;
 			h4 {
@@ -538,8 +541,8 @@ button:focus {
 				}
 			}
 		}
-
 	}
+
 	img {
 		max-width: 22rem;
 		position: absolute;
@@ -557,7 +560,6 @@ button:focus {
 		li {
 			margin-bottom: 2.5rem;
 			font-size: 1.3rem;
-			
 		}
 		&__item {
 			margin-bottom: 1.6rem;
@@ -579,6 +581,64 @@ button:focus {
 	}
 
 }
+
+/* ------ eighth screen "materials"------ */
+.materials {
+	background: #fff url(../img/materials/materialsbg.jpg) center center no-repeat;
+	.section-title {
+		p {
+			margin: 5.2rem 0 7rem;
+		}
+	}
+	.materials-slider {
+		&__block {
+			text-align: center;
+			
+			h3 {
+				.bold;
+				font-size: 2.2rem;
+				margin: 2rem 0 2.5rem;
+			}
+			p {
+				font-size: 1.9rem;
+				max-width: 24rem;
+				margin: 0 auto;
+				min-height: 7.3rem;
+			}
+
+			a {
+				color: #6ba253; 
+				position: relative;
+				display: inline-block;
+				font-size: 1.6rem;
+
+				&::after {
+					content: '';
+					position: absolute;
+					bottom: 0;
+					left: 0;
+					display: inline-block;
+					width: 100%;
+					height: 2px;
+					background-color: #dde7d9;
+				}
+			}
+		}
+	}
+	.section-link {
+		margin-top: 2rem;
+		font-size: 2rem;
+		a:not(:last-child){
+			color: #6ba253;
+			text-decoration: underline;
+		}
+		a:last-child {
+			.bold();
+			color: #000;
+		}
+	}
+}
+
 
 
  /* ------ Slick Slider feature------ */
@@ -912,6 +972,16 @@ button:focus {
 	section {
 		padding: 4rem 0 3.7rem;
 	}
+	.section-title {
+		h3 {
+			font-size: 2.4rem;
+		}
+		p {
+			font-size: 1.5rem;
+			line-height: 1.8rem;
+		}
+		
+	}
 
 	
 	.main {
@@ -1028,13 +1098,28 @@ button:focus {
 		}
 		.incluse-item {
 			margin-top: 3.0rem;
+			align-items: center;
+			h5 {
+				margin: 0;
+			}
+			p {
+				line-height: 1.4rem;
+				margin: 0;
+			}
 		}
+
 	}
 	.problems {
 		&-list {
 			display: none;
 		}
 		
+	}
+	.materials {
+		.section-link {
+			font-size: 1.6rem;
+			line-height: 2rem;
+		}
 	}
 }
 	
