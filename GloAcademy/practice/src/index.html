@@ -24,6 +24,17 @@
 	<link rel="stylesheet" href="slick-1.8.1/slick-theme.css">
 	<!-- CSS Styles -->
 	<link rel="stylesheet" href="css/main.css">
+	<!-- Yandex.Metrika counter --> <script type="text/javascript" > (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter54768745 = new Ya.Metrika({ id:54768745, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/54768745" style="position:absolute; left:-9999px;" alt="" /></div></noscript> 
+<!-- /Yandex.Metrika counter -->
+	<script type="text/javascript">
+
+		window.onload = function() {
+
+		yaCounter54768745.reachGoal('popup-btn');
+
+		}
+
+	</script>
 </head>
 <body>
 	<!---------  First screen --------->
@@ -81,7 +92,7 @@
 							<h1 class="offer__title">
 								Автоматизированная штукатурка стен
 							</h1>
-							<p class="offer__text text-sm-center">
+							<p class="offer__text text-sm-center text-md-left">
 								Идеально ровные стены в кратчайшие сроки
 							</p>
 							<span class="offer__coast">
@@ -114,10 +125,11 @@
 								* - выезды на замер осуществляются в рабоче дни Пн-Пт с 9:00 до 18:00
 							</p>
 						</form>
-					
-					</div>
-				</div>
-			</div>
+						</div> <!-- //col -->
+				</div> <!-- //row -->
+
+			</div> <!-- //offer-form -->
+
 		</div> <!--//container-->
 	</main>
 	
@@ -206,7 +218,7 @@
 					</div>
 				</div> 
 				<div class="col-lg-4 text-lg-right">
-					<button class="price-head__button button" data-toggle="modal">
+					<button id="cost" class="price-head__button button" onclick="yaCounter54768745.reachGoal('popup-btn'); return true;" data-toggle="modal">
 						Рассчитать точную стоимость
 					</button>
 				</div>
@@ -816,7 +828,99 @@
 		</div> <!--//container-->
 	</section>
 
+	<!---------  section 9 "showroom" --------->
+	<section id="showroom" class="showroom">
+		<div class="container">
 
+			<div class="row">
+				<div class="col-md-12 d-flex justify-content-md-between flex-column flex-md-row">
+					<div class="offer showroom-offer">
+						<h2 class="offer__title text-md-left text-center">
+							Посмотрите как мы работаем
+						</h2>
+						<p class="offer__text text-md-left text-center">
+							Хотите удостовериться в профессионализме наших сотрудников?
+						</p>
+						<p class="offer__text text-md-left text-center">
+							Вы можете сделать это, приехав на один из наших объектов, и понаблюдав за ходом работ. Увидите оборудование, материалы и качество исполнения.
+						</p>
+					</div>
+
+					<form class="form showroom-form text-center" action="#">
+						<h4 class="form__title">
+							Оставьте контактные данные для связи
+						</h4>
+						<label for="#">
+							Ваше имя
+						</label>
+						<input class="form__input" type="text" required>
+						<label for="#">
+							Номер телефона
+						</label>
+						<input class="form__input" type="tel" required>
+						<button class="form__btn button" type="submit">
+							Записаться на просмотр
+						</button>
+						<small>
+							Подберем ближайщий к вам объект
+						</small>
+					</form>
+				</div> <!-- //col -->
+			</div> <!-- //row -->
+
+		</div> <!-- //container -->
+	</section>
+
+	<!---------  section 10 "upsail" --------->
+	<section id="upsail" class="upsail">
+		<div class="container">
+
+			<div class="section-title  section-title_light">
+				<h3>
+					Дополнительные услуги
+				</h3>
+				<p class="price-head__text">
+					Помимо штукатурных рыбот Вы можете заказать у нас следующие услуги
+				</p>
+			</div> <!-- //section-title -->
+
+			<div class="row">
+				<div class="col-lg-4">
+					<div class="upsail-item text-center">
+						<img src="img/upsail/1.jpg" alt="Электропроводка">
+						<h5>
+							Монтаж электропроводки
+						</h5>
+						<button class="button">
+							Цены
+						</button>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="upsail-item text-center">
+						<img src="img/upsail/2.jpg" alt="Стяжка пола">
+						<h5>
+							Стяжка пола
+						</h5>
+						<button class="button">
+							Цены
+						</button>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="upsail-item text-center">
+						<img src="img/upsail/3.jpg" alt="Стяжка пола">
+						<h5>
+							Стяжка пола
+						</h5>
+						<button class="button">
+							Цены
+						</button>
+					</div>
+				</div>
+			</div>
+		</div> <!-- //container -->
+	</section>
 
 	<footer id="footer" class="footer">
 		<div class="container">
@@ -860,7 +964,7 @@
 				</div>	
 			</div>
 		</div>
-	</div>
+	</div> <!-- //popup -->
 
 	<!-- Подключение Jquery -->
 	<script

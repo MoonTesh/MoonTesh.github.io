@@ -310,6 +310,9 @@ button:focus {
 				}
 			}
 		}
+		&__button {
+			width: 21rem;
+		}
 		
 	}
 		
@@ -639,6 +642,52 @@ button:focus {
 	}
 }
 
+/* ------ ninth screen "showroom"------ */
+.showroom {
+	background: #fff url(../img/showroom/showroom_bg.jpg) top center no-repeat;
+	background-size: cover;
+	.showroom-offer {
+		h2 {
+			font-size: 4rem;
+			width: 38.2rem;
+			line-height: 5.8rem;
+		}
+		p {
+			width: 50rem;
+			margin: 2.7rem 0 4rem;
+
+		}
+	}
+	.showroom-form {
+		h4 {
+			width: 25rem;
+		}
+		.form__btn {
+			display: block;
+		}
+	}
+}
+
+/* ------ tenth screen "upsail"------ */
+.upsail {
+	background-color: #286b0a;
+	color: #fff;
+	.section-title {
+		p {
+			font-size: 1.9rem;
+		}
+	}
+	.upsail-item {
+		h5 {
+			.bold();
+			font-size: 2rem;
+			margin: 3rem 0; 
+		}
+		.button {
+			width: 15rem;
+		}
+	}
+}
 
 
  /* ------ Slick Slider feature------ */
@@ -784,12 +833,20 @@ button:focus {
 		// }
 
 	}
-
+	.upsail-item {
+		img {
+			width: 100%;
+			max-width: 30rem;
+		}
+	}
 
 }
 
 /* 768-991px */
 @media screen and (max-width: 991px) {
+	section {
+	    padding: 7rem 0;
+	}
 	.section-title {
 		margin-bottom: 5rem!important;
 	}
@@ -802,29 +859,30 @@ button:focus {
 	}
 	.main {
 		background-position: top left;
+		.offer {
+			text-align: center;
+			&-form {
+		    	margin-top: 17rem;
+			}
+			&__title {
+				font-size: 3rem;
+				width: 375px;
+				line-height: 4rem;
+				position: absolute;
+				top: -10rem;
+				right: 15rem;
+			}
+			&__text {
+			    margin: 8rem 0 6rem;
+			}
+			&__trigger {
+				margin-top: 6rem;
+			}
+		}
+
 	}
 
-	.offer {
-		text-align: center;
-		&-form {
-	    	margin-top: 17rem;
-		}
-		&__title {
-			font-size: 3rem;
-			width: 375px;
-			line-height: 4rem;
-			position: absolute;
-			top: -10rem;
-			right: 15rem;
-		}
-		&__text {
-		    margin: 8rem 0 6rem;
-		}
-		&__trigger {
-			margin-top: 6rem;
-		}
-	}
-
+	
 	.main-form {
 		padding: 3rem 3rem 3rem;
 		margin-top: 3rem;
@@ -852,8 +910,33 @@ button:focus {
     		min-height: 42rem;
 		}
 	}
+	.showroom {
+		.showroom-offer {
+			h2 {
+				font-size: 3.6rem;
+				line-height: 5rem;
+			}
 
-
+			p {
+				width: 38rem;
+				margin: 0rem 0 2rem;
+			}
+		}
+	}
+	
+	.upsail {
+		
+		.upsail-item {
+			min-height: 55rem;
+			h5 {
+				margin: 2rem 0; 
+			}
+			img {
+				max-width: 100%;
+			}
+		}
+	}
+	
 
 	
 }
@@ -872,12 +955,15 @@ button:focus {
 	.header-btn {
 		margin-top: 17rem;
 	}
-	.offer__title {
+	main {
+		.offer__title {
 		text-align: center;
 		left: 50%;
 		transform: translateX(-50%) translateY(-50%);
 		top: -13rem;
+		}
 	}
+	
 	.offer-form {
 	    margin-top: 1rem;
 	}
@@ -947,6 +1033,37 @@ button:focus {
 			min-height: auto;
 		}
 		
+	}
+	.showroom {
+		background: #fff url(../img/showroom/showroom_bg.jpg) top left no-repeat;
+		background-size:cover;
+		.showroom-offer {
+			h2 {
+				width: auto;
+				margin-bottom: 2.5rem;
+			}
+			p {
+				width: auto;
+			}
+		}
+		.form {
+			margin-top: 3rem;
+			padding: 4.6rem 2.7rem 2rem;
+		}
+		
+	}
+	.upsail {
+		.section-title {
+			h3 {
+				font-size: 3rem;
+			}
+			p {
+				font-size: 1.8rem;
+			}
+		}
+		.upsail-item {
+			min-height: 44rem;
+		}
 	}
 
 }
@@ -1119,6 +1236,40 @@ button:focus {
 		.section-link {
 			font-size: 1.6rem;
 			line-height: 2rem;
+		}
+	}
+	.showroom {
+		.showroom-offer {
+			h2 {
+				font-size: 3rem;
+				line-height: 3rem;
+			}
+			p {
+				font-size: 1.5rem;
+				line-height: 2rem;
+			}
+		}
+		.form {
+			margin-top: 3rem;
+			padding: 2.5rem 2.7rem 2rem;
+		}
+		
+	}
+	.upsail {
+		.section-title {
+			h3 {
+				font-size: 2.4rem;
+			}
+			p {
+				font-size: 1.5rem;
+			}
+		}
+		.upsail-item {
+			margin-bottom: 4rem;
+			min-height: 100%;
+			img {
+
+			}
 		}
 	}
 }
