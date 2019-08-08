@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Формы на сайте</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+		
+	<div class="container">  
+  <form id="form" action="mailer/smart.php" method="post">
+    <h3>Colorlib Contact Form</h3>
+    <h4>Contact us for custom quote</h4>
+    <fieldset>
+      <input placeholder="Your name" type="text" name="user_name" tabindex="1" required autofocus>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Email Address" type="email" name="user_mail" tabindex="2" required>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Phone Number (optional)" type="tel" name="user_tel" tabindex="3" required>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Web Site (optional)" type="url" name="user_site" tabindex="4" required>
+    </fieldset>
+    <fieldset>
+      <textarea placeholder="Type your message here...." name="user_message" tabindex="5" required></textarea>
+    </fieldset>
+    <fieldset>
+      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+    </fieldset>
+    <p class="copyright">Designed by <a href="https://colorlib.com" target="_blank" title="Colorlib">Colorlib</a></p>
+  </form>
+</div>
+  <!-- JS Scripts -->
+  <script
+    src="https://code.jquery.com/jquery-1.12.4.min.js"
+    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+    crossorigin="anonymous">
+  </script>
+  <script
+    src="https://code.jquery.com/jquery-migrate-3.1.0.min.js"
+    integrity="sha256-ycJeXbll9m7dHKeaPbXBkZH8BuP99SmPm/8q5O+SbBc="
+    crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+  <!-- JS Scripts -->
+  <script src="js/main.js"></script>
+
+<script>
+// Отправка данных на сервер
+  $('#form').trigger('reset');
+  $(function() {
+    'use strict';
+    $('#form').on('submit', function(e) {
+      e.preventDefault();
+      $.ajax({
+        url: 'send.php',
+        type: 'POST',
+        contentType: false,
+        processData: false,
+        data: new FormData(this),
+        success: function(msg) {
+          console.log(msg);
+          if (msg == 'ok') {
+            alert('Сообщение отправлено');
+            $('#form').trigger('reset'); // очистка формы
+          } else {
+            alert('Ошибка');
+          }
+        }
+      });
+    });
+  });
+</script>
+
+	<!-- <script>
+		$('form').submit(function(event) {
+			event.preventDefault();
+			$.ajax({
+				type: "POST",
+				url: "mailer/smart.php",
+				data: $(this).serialize()
+			}).done(function() {
+				$(this).find("input").val("");
+				alert("Сообщение успешно отправлено");
+				$("form").trigger("reset");
+			});
+			return false;
+		});
+	</script> -->
+
+</body>
+</html>

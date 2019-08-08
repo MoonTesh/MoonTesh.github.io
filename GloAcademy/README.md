@@ -40,6 +40,8 @@
 
 [Урок 23 - Покупка хостинга и домена](https://gipsolit.firerainbow.ru)
 
-[Урок 24 - Аналитика на сайте (установка и проверка Яндекс метрики)](https://moontesh.github.io/GloAcademy/lesson24/)
+[Урок 24 - Аналитика на сайте (установка и проверка Яндекс метрики)](https://moontesh.github.io/GloAcademy/lesson24/ "Репозиторий GitHub")
+
+[Урок 25 - Отправка формы через PHPMailer](https://moontesh.github.io/GloAcademy/lesson25/ "Репозиторий GitHub")
 
 
