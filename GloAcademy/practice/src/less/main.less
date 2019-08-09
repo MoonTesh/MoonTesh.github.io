@@ -65,7 +65,7 @@
 		font-size: 1.3rem;
 		background-color: @btn-text-color;
 	}
-	&__input {
+	&__input, &__textarea {
 		display: block;
 		padding: 1.7rem 2rem;
 		width: 100%;
@@ -158,6 +158,12 @@ button:focus {
 
 .section-title_light {
 	color: @btn-text-color;
+}
+.tel {
+	cursor: auto;
+	&:hover {
+		color: #000;
+	}
 }
 
 
@@ -689,12 +695,64 @@ button:focus {
 	}
 }
 
+/* ------ eleventh screen "contacts"------ */
+
+.contacts {
+	background: #fff url(../img/contacts/contactsbg.jpg) top right -405px no-repeat;
+	background-size: cover;
+	.section-title {
+		margin-bottom: 6.5rem;
+	}
+	.contact-list {
+		font-size: 1.8rem;
+		&__item {
+			margin: 3rem 0 2.7rem;
+		}
+		p {
+			margin-bottom: 0;
+		}
+		.tel {
+			&:hover {
+				color: #000;
+			}
+		}
+		.mail {
+			text-decoration: underline;
+			color: #000;
+			&:hover {
+				color: #000;
+			}
+		}
+	}
+
+	&-form {
+		padding: 4.6rem 4.6rem 3.6rem;
+
+	}
+}
+
+/* ------ footer------ */
+footer {
+	padding: 3rem 0;
+	p {
+		margin-bottom: 0;
+	}
+	.mail {
+		font-size: 1.7rem;
+		color: #000;
+		text-decoration: underline;
+		&:hover {
+			color: #000;
+		}
+
+	}
+
+}
 
  /* ------ Slick Slider feature------ */
 .slick-active {
 	outline: none;
 }
-
 
 .slick-slide img {
 	display: inline-block;
@@ -725,6 +783,7 @@ button:focus {
 	background-size: 65%;
 	opacity: 0.7;
 }
+
 
  /* ------ Modal Windows------ */
 .popup {
@@ -777,7 +836,6 @@ button:focus {
 			padding-bottom: 1.1rem;
 		}
 	}
-
 }
 
 /*>1200px */
@@ -826,12 +884,6 @@ button:focus {
 				right: -2.3rem;
 			}
 		}
-	}
-	.problems {
-		// img {
-		// 	max-width: 19%;
-		// }
-
 	}
 	.upsail-item {
 		img {
@@ -936,9 +988,12 @@ button:focus {
 			}
 		}
 	}
-	
-
-	
+	footer {
+		.footer-contacts {
+			margin-left: 4rem;
+		}
+	}
+		
 }
 
 /* 576-767px */
@@ -1063,6 +1118,14 @@ button:focus {
 		}
 		.upsail-item {
 			min-height: 44rem;
+		}
+	}
+	footer {
+		.footer-contacts {
+			margin: 4rem 0;
+			a {
+				display: block;
+			}
 		}
 	}
 

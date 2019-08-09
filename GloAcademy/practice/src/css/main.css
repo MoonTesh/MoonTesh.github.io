@@ -38,7 +38,8 @@
   font-size: 1.3rem;
   background-color: #ffffff;
 }
-.form__input {
+.form__input,
+.form__textarea {
   display: block;
   padding: 1.7rem 2rem;
   width: 100%;
@@ -125,6 +126,12 @@ button:focus {
 }
 .section-title_light {
   color: #ffffff;
+}
+.tel {
+  cursor: auto;
+}
+.tel:hover {
+  color: #000;
 }
 /* ------ First screen ------ */
 .main {
@@ -591,6 +598,51 @@ button:focus {
 .upsail .upsail-item .button {
   width: 15rem;
 }
+/* ------ eleventh screen "contacts"------ */
+.contacts {
+  background: #ffffff url(../img/contacts/contactsbg.jpg) top right -405px no-repeat;
+  background-size: cover;
+}
+.contacts .section-title {
+  margin-bottom: 6.5rem;
+}
+.contacts .contact-list {
+  font-size: 1.8rem;
+}
+.contacts .contact-list__item {
+  margin: 3rem 0 2.7rem;
+}
+.contacts .contact-list p {
+  margin-bottom: 0;
+}
+.contacts .contact-list .tel:hover {
+  color: #000;
+}
+.contacts .contact-list .mail {
+  text-decoration: underline;
+  color: #000;
+}
+.contacts .contact-list .mail:hover {
+  color: #000;
+}
+.contacts-form {
+  padding: 4.6rem 4.6rem 3.6rem;
+}
+/* ------ footer------ */
+footer {
+  padding: 3rem 0;
+}
+footer p {
+  margin-bottom: 0;
+}
+footer .mail {
+  font-size: 1.7rem;
+  color: #000;
+  text-decoration: underline;
+}
+footer .mail:hover {
+  color: #000;
+}
 /* ------ Slick Slider feature------ */
 .slick-active {
   outline: none;
@@ -793,6 +845,9 @@ button:focus {
   .upsail .upsail-item img {
     max-width: 100%;
   }
+  footer .footer-contacts {
+    margin-left: 4rem;
+  }
 }
 /* 576-767px */
 @media screen and (max-width: 767px) {
@@ -895,6 +950,12 @@ button:focus {
   }
   .upsail .upsail-item {
     min-height: 44rem;
+  }
+  footer .footer-contacts {
+    margin: 4rem 0;
+  }
+  footer .footer-contacts a {
+    display: block;
   }
 }
 /* 320-575px */
