@@ -44,6 +44,8 @@
 
 [Урок 25 - Отправка формы через PHPMailer](https://moontesh.github.io/GloAcademy/lesson25/ "Репозиторий GitHub")
 
-[Урок 26 - Vyjujcnhfybxyst сайты](https://moontesh.github.io/GloAcademy/lesson26/ "Репозиторий GitHub")
+[Урок 26 - Многостраничные сайты](https://moontesh.github.io/GloAcademy/lesson26/ "Репозиторий GitHub")
+
+[Урок 27 - Посадка сайта на Wordpress](http://learning.firerainbow.ru/lesson27/project/)
 
 
