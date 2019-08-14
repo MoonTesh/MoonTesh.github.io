@@ -7,7 +7,7 @@
 	<meta name="description" content="Автоматизированная штукатурка стен">
 	<meta name="keyswords" content="Штукатурка стен, ровные стены, грунтовка, бетоноконтакт">
 	<!-- FAVICON -->
-	<link rel="icon" href="img/favicon.png" type="=image/x-icon">
+	<link rel="icon" href="img/favicon.png" type="image/x-icon">
 	<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
 	<!-- OG-метки -->
 	<meta property="og:title" content="Главная">
@@ -24,9 +24,9 @@
 	<link rel="stylesheet" href="slick-1.8.1/slick-theme.css">
 	<!-- CSS Styles -->
 	<link rel="stylesheet" href="css/main.css">
-	<!-- Yandex.Metrika counter --> <script type="text/javascript" > (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter54768745 = new Ya.Metrika({ id:54768745, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/54768745" style="position:absolute; left:-9999px;" alt="" /></div></noscript> 
+	<!-- Yandex.Metrika counter --> <script> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter54768745 = new Ya.Metrika({ id:54768745, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> 
 <!-- /Yandex.Metrika counter -->
-	<script type="text/javascript">
+	<script>
 
 		window.onload = function() {
 
@@ -37,10 +37,10 @@
 	</script>
 </head>
 <body>
-	<!---------  First screen --------->
+	<!-- First screen -->
 	<main id="main" class="main">
 		<div class="tel d-flex justify-content-around align-items-center d-sm-none">
-			<div tel-wrap>
+			<div class="tel-wrap">
 				<a href="tel:+74957710508" class="tel">
 					+7 495 771 05 08
 				</a>
@@ -55,7 +55,7 @@
 			<header class="header">
 				
 				<div class="row d-sm-none justify-content-center">
-					<div col-12>
+					<div class="col-12">
 						<div class="logo-small align-items-center">
 							<a href="#" class="logo">
 								<img src="img/logo-small.png" alt="ГИПСОЛИТ">
@@ -107,14 +107,14 @@
 							<h4 class="form__title">
 								Для расчёта точной стоимости закажите <strong>выезд замерщика</strong>
 							</h4>
-							<label for="#">
+							<label for="name-2">
 								Ваше имя
 							</label>
-							<input class="form__input" type="text" required>
-							<label for="#">
+							<input class="form__input" id="name-2" type="text" required>
+							<label for="tel-2">
 								Номер телефона
 							</label>
-							<input class="form__input" type="tel" required>
+							<input class="form__input" id="tel-2" type="tel" required>
 							<button class="form__btn button" type="submit">
 								Оставьте заявку
 							</button>
@@ -133,7 +133,7 @@
 		</div> <!--//container-->
 	</main>
 	
-	<!---------  section 2 "features-section" --------->
+	<!-- section 2 "features-section" -->
 	<section id="features-section" class="features-section">
 		<div class="container">
 			
@@ -147,7 +147,7 @@
 						<div class="features__block">
 							<div class="features__img">
 								<picture>
-									<source srcset="img/coin.svg" type="image/">
+									<source srcset="img/coin.svg" type="image/svg+xml">
 									<img src="img/coin.png" alt="Платите по факту">
 								</picture>
 							</div>
@@ -159,7 +159,7 @@
 						<div class="features__block">
 							<div class="features__img">
 								<picture>
-									<source srcset="img/folder.svg" type="image/">
+									<source srcset="img/folder.svg" type="image/svg+xml">
 									<img src="img/folder.png" alt="Заключаем договор">
 								</picture>
 							</div>
@@ -171,7 +171,7 @@
 						<div class="features__block">
 							<div class="features__img">
 								<picture>
-									<source srcset="img/clock.svg" type="image/">
+									<source srcset="img/clock.svg" type="image/svg+xml">
 									<img src="img/clock.png" alt="Точно в срок">
 								</picture>
 							</div>
@@ -183,7 +183,7 @@
 						<div class="features__block">
 							<div class="features__img">
 								<picture>
-									<source srcset="img/piggy-bank.svg" type="image/">
+									<source srcset="img/piggy-bank.svg" type="image/svg+xml">
 									<img src="img/piggy-bank.png" alt="Экономите на материалах">
 								</picture>
 							</div>
@@ -201,7 +201,7 @@
 		</div> <!--//container-->
 	</section>
 	
-	<!---------  section 3 "price-section" --------->
+	<!-- section 3 "price-section"-->
 	<section id="price-section" class="price-section">
 		<div class="container">
 			<div class="row">
@@ -295,7 +295,7 @@
 		</div> <!--//container-->
 	</section>
 
-	<!---------  section 4 "feedback" --------->
+	<!-- section 4 "feedback" -->
 	<section id="feedback" class="feedback">
 		<div class="container">
 
@@ -304,7 +304,7 @@
 					Отзывы
 				</h3>
 			</div>
-			<!---------  FEEDBACK-SLIDER --------->
+			<!-- FEEDBACK-SLIDER -->
 			<div class="feedback-slider">
 				<div class="feedback-slider__item">
 					<div class="row">
@@ -411,7 +411,7 @@
 
 			<div class="row"> 
 				<div class="col-lg-10 offset-lg-1 text-center">
-					<!---------  FEEDBACK-FORM --------->
+					<!--FEEDBACK-FORM-->
 					<div class="feedback-form form">
 						<h4 class="feedback-form__title">
 							Хотите так же? Оставьте Ваши контактные данные
@@ -419,16 +419,16 @@
 						<form action="#">
 							<div class="row">
 								<div class="col-md-6">
-									<label for="#">
+									<label for="name-3">
 										Ваше имя
 									</label>
-									<input class="form__input" type="text" required>	
+									<input class="form__input" id="name-3" type="text" required>	
 								</div> <!-- //col-md-6-->
 								<div class="col-md-6">
-									<label for="#">
+									<label for="tel-3">
 										Номер телефона
 									</label>
-									<input class="form__input" type="tel" required>
+									<input class="form__input" id="tel-3" type="tel" required>
 								</div> <!-- //col-md-6-->
 							</div> <!-- //row -->
 							<button class="form__btn button feedback-form__btn" type="submit">
@@ -446,7 +446,7 @@
 		<img class="hand" src="img/feedback/hand.png" alt="">
 	</section>
 
-	<!---------  section 5 "scheme" --------->
+	<!-- section 5 "scheme"-->
 	<section id="scheme" class="scheme">
 		<div class="container">
 
@@ -514,7 +514,7 @@
 		</div> <!--//container-->
 	</section>
 
-	<!---------  section 6 "incluse" --------->
+	<!-- section 6 "incluse" -->
 	<section id="incluse" class="incluse">
 		<div class="container">
 
@@ -653,7 +653,7 @@
 		</div> <!--//container-->
 	</section>
 
-	<!---------  section 7 "problems" --------->
+	<!-- section 7 "problems" -->
 	<section id="problems" class="problems">
 		<div class="container">
 
@@ -765,7 +765,7 @@
 		<img src="img/problems/wooman.png" alt="Girl">
 	</section>
 
-	<!---------  section 8 "materials" --------->
+	<!-- section 8 "materials" -->
 	<section id="materials" class="materials">
 		<div class="container">
 
@@ -828,7 +828,7 @@
 		</div> <!--//container-->
 	</section>
 
-	<!---------  section 9 "showroom" --------->
+	<!-- section 9 "showroom" -->
 	<section id="showroom" class="showroom">
 		<div class="container">
 
@@ -850,14 +850,14 @@
 						<h4 class="form__title">
 							Оставьте контактные данные для связи
 						</h4>
-						<label for="#">
+						<label for="name-4">
 							Ваше имя
 						</label>
-						<input class="form__input" type="text" required>
-						<label for="#">
+						<input class="form__input" id="name-4" type="text" required>
+						<label for="tel-4">
 							Номер телефона
 						</label>
-						<input class="form__input" type="tel" required>
+						<input class="form__input" id="tel-4" type="tel" required>
 						<button class="form__btn button" type="submit">
 							Записаться на просмотр
 						</button>
@@ -871,7 +871,7 @@
 		</div> <!-- //container -->
 	</section>
 
-	<!---------  section 10 "upsail" --------->
+	<!-- section 10 "upsail" -->
 	<section id="upsail" class="upsail">
 		<div class="container">
 
@@ -922,7 +922,7 @@
 		</div> <!-- //container -->
 	</section>
 
-	<!---------  section 10 "contacts" --------->
+	<!-- section 10 "contacts" -->
 	<section id="contacts" class="contacts">
 		<div class="container">
 			<div class="row">
@@ -941,7 +941,7 @@
 								Москва, копейское шоссе, 12, офис 34
 							</p>
 						</div>
-						<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9f461cd0a5950bddf5b09365f7dd63ecfb8ce036a5fef319ab180a0437d81b42&amp;width=100%25&amp;height=240&amp;lang=ru_UA&amp;scroll=false"></script>
+						<script async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9f461cd0a5950bddf5b09365f7dd63ecfb8ce036a5fef319ab180a0437d81b42&amp;width=100%25&amp;height=240&amp;lang=ru_UA&amp;scroll=false"></script>
 						<div class="contact-list__item">
 							<p>Номер телефона</p>
 							<a href="tel:+74957710508" class="tel">
@@ -971,22 +971,22 @@
 						<h4 class="form__title">
 							Оставьте контактные данные для связи
 						</h4>
-						<label for="#">
+						<label for="name-5">
 							Ваше имя
 						</label>
-						<input class="form__input" type="text" required>
-						<label for="#">
+						<input class="form__input" id="name-5" type="text" required>
+						<label for="tel-5">
 							Номер телефона
 						</label>
-						<input class="form__input" type="tel" required>
-						<label for="#">
+						<input class="form__input" id="tel-5" type="tel" required>
+						<label for="mail">
 							E-mail
 						</label>
-						<input class="form__input" type="mail" required>
-						<label for="#">
+						<input class="form__input" id="mail" type="email" required>
+						<label for="message">
 							Сообщение
 						</label>
-						<textarea class="form__textarea" rows="5"></textarea> 
+						<textarea class="form__textarea" id="message" rows="5"></textarea> 
 						<button class="form__btn button" type="submit">
 							Записаться на просмотр
 						</button>
@@ -996,6 +996,7 @@
 		</div> <!-- //container -->
 	</section>
 
+	<!-- footer -->
 	<footer id="footer" class="footer">
 		<div class="container">
 			<div class="row align-items-center">
@@ -1050,18 +1051,18 @@
 				</p>
 				<div class="popup__form form">
 					<form action="#">
-						<label for="#">
+						<label for="name">
 							Ваше имя
 						</label>
-						<input class="form__input" type="text" required>
-						<label for="#">
+						<input class="form__input" id="name" type="text" required>
+						<label for="tel">
 							Номер телефона
 						</label>
-						<input class="form__input" type="text" required>
-						<label for="#" >
+						<input class="form__input" id="tel" type="text" required>
+						<label for="mes" >
 							Сообщение
 						</label>
-						<textarea class="form__input" rows="3"></textarea>
+						<textarea class="form__input" id="mes" rows="3"></textarea>
 						<button class="form__btn button" type="submit">
 							Оставьте заявку
 						</button>

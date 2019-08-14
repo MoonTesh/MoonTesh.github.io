@@ -210,6 +210,9 @@ button:focus {
 .features__block p a {
   color: #70c849;
 }
+.features .hell {
+  height: 6.7rem;
+}
 /* ------ Therd screen "price-section"------ */
 .price-section {
   background: #286a0a url(../img/therdScreen/bg.jpg) center;
